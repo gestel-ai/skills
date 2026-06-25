@@ -1,4 +1,4 @@
 {
-  "name": "GESTEL-skills",
-  "skills": ["./skills/gestel-product-engineering"]
+  "name": "GESTEL",
+  "skills": ["./skills/product-engineering"]
 }

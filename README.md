@@ -8,7 +8,7 @@ This repository follows the Vercel Labs `skills` CLI layout:
 .claude-plugin/
   plugin.json
 skills/
-  gestel-product-engineering/
+  product-engineering/
     SKILL.md
 skills.sh.json
 ```
@@ -17,7 +17,7 @@ It supports both conventional skill discovery and plugin manifest discovery.
 
 ## Skills
 
-### gestel-product-engineering
+### product-engineering
 
 Guidance for building, reviewing, and refactoring application code with small
 reversible changes, boring technology, simple architecture, semantic HTML, and
@@ -31,13 +31,13 @@ Install or inspect this repository with:
 
 ```bash
 npx skills add https://github.com/gestel-ai/skills --list
-npx skills add https://github.com/gestel-ai/skills --skill gestel-product-engineering
+npx skills add https://github.com/gestel-ai/skills --skill product-engineering
 ```
 
 You can also use the skill without installing it:
 
 ```bash
-npx skills use https://github.com/gestel-ai/skills --skill gestel-product-engineering
+npx skills use https://github.com/gestel-ai/skills --skill product-engineering
 ```
 
 ## Local Validation
@@ -46,7 +46,7 @@ Run these checks before publishing changes:
 
 ```bash
 npx skills add . --list
-npx skills use . --skill gestel-product-engineering >/tmp/gestel-product-engineering.txt
+npx skills use . --skill product-engineering >/tmp/product-engineering.txt
 ```
 
 The first command verifies that the repository is discoverable by the Vercel

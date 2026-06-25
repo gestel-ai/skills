@@ -37,4 +37,4 @@ jobs:
       - name: List discoverable skills
         run: npx --yes skills add . --list
       - name: Resolve skill prompt
-        run: npx --yes skills use . --skill gestel-product-engineering >/tmp/gestel-product-engineering.txt
+        run: npx --yes skills use . --skill product-engineering >/tmp/product-engineering.txt

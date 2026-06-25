@@ -1,5 +1,5 @@
 ---
-name: gestel-product-engineering
+name: product-engineering
 description: Pragmatic product engineering guidance for designing, implementing, reviewing, and refactoring application code with small reversible changes, boring technology, simple architecture, semantic HTML, and practical tests. Use when maintainability, delivery speed, and operational risk matter.
 ---
 

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Gestel",
+      "description": "Pragmatic product engineering skills for building maintainable software with minimal ceremony.",
+      "skills": ["gestel-product-engineering"]
+    }
+  ]
+}

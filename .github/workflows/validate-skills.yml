@@ -1,0 +1,18 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: List discoverable skills
+        run: npx --yes skills add . --list
+      - name: Resolve skill prompt
+        run: npx --yes skills use . --skill gestel-product-engineering >/tmp/gestel-product-engineering.txt

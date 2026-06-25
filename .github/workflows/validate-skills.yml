@@ -12,6 +12,28 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Validate plugin manifest
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const manifest = JSON.parse(fs.readFileSync('.claude-plugin/plugin.json', 'utf8'));
+
+          if (!manifest.name) {
+            throw new Error('plugin manifest is missing name');
+          }
+
+          for (const skillPath of manifest.skills || []) {
+            if (!skillPath.startsWith('./')) {
+              throw new Error(`skill path must start with ./, got ${skillPath}`);
+            }
+
+            const skillFile = path.join(skillPath, 'SKILL.md');
+            if (!fs.existsSync(skillFile)) {
+              throw new Error(`missing ${skillFile}`);
+            }
+          }
+          NODE
       - name: List discoverable skills
         run: npx --yes skills add . --list
       - name: Resolve skill prompt

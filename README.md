@@ -5,11 +5,15 @@ Public agent skills for pragmatic product engineering.
 This repository follows the Vercel Labs `skills` CLI layout:
 
 ```text
+.claude-plugin/
+  plugin.json
 skills/
   gestel-product-engineering/
     SKILL.md
 skills.sh.json
 ```
+
+It supports both conventional skill discovery and plugin manifest discovery.
 
 ## Skills
 

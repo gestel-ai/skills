@@ -1,4 +1,4 @@
-# Gestel Skills
+# GESTEL Skills
 
 Public agent skills for pragmatic product engineering.
 

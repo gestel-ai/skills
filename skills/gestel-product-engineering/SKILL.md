@@ -3,7 +3,7 @@ name: gestel-product-engineering
 description: Pragmatic product engineering guidance for designing, implementing, reviewing, and refactoring application code with small reversible changes, boring technology, simple architecture, semantic HTML, and practical tests. Use when maintainability, delivery speed, and operational risk matter.
 ---
 
-# Gestel Product Engineering
+# GESTEL Product Engineering
 
 Use this skill to keep product engineering work simple, shippable, and easy to
 debug.

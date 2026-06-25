@@ -3,7 +3,7 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "Gestel",
+      "title": "GESTEL",
       "description": "Pragmatic product engineering skills for building maintainable software with minimal ceremony.",
       "skills": ["gestel-product-engineering"]
     }

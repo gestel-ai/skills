@@ -1,14 +1,15 @@
 # GESTEL Skills
 
-Public agent skills for marketing — a library of 118 self-contained skills
-covering paid ads, content, SEO, brand, growth, and measurement.
+Public agent skills for marketing — a library of 120 self-contained skills
+covering paid ads, content, SEO, brand, growth, and measurement, plus
+authoring meta-skills.
 
 This repository follows the Vercel Labs `skills` CLI layout and exposes the
 skills through both conventional skill discovery and plugin manifest discovery.
 
 ## Skills
 
-The library is organized into 8 categories:
+The library is organized into 9 categories:
 
 | Category | Skills | Focus |
 | --- | --- | --- |
@@ -20,6 +21,7 @@ The library is organized into 8 categories:
 | Media | 2 | Image and short-form video generation planning. |
 | Reporting | 2 | Performance math, RevOps, and measurement. |
 | SEO | 35 | Search and AI-search optimization across the SEO lifecycle. |
+| Meta | 2 | Agent skill and goal authoring meta-skills (`goalify`, `skillify`). |
 
 Each skill is self-contained: a procedural `SKILL.md` plus its own
 `references/` support material and `evals/`. Skills do not depend on any

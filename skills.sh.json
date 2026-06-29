@@ -167,6 +167,14 @@
         "gestel-seo-unlighthouse",
         "gestel-site-architecture"
       ]
+    },
+    {
+      "title": "Meta",
+      "description": "Agent skill and goal authoring meta-skills.",
+      "skills": [
+        "goalify",
+        "skillify"
+      ]
     }
   ]
 }

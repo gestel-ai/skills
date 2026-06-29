@@ -7,9 +7,9 @@ This file gives coding agents guidance when working in this repository.
 This is the public GESTEL skill repository at
 `https://github.com/gestel-ai/skills`.
 
-It is a library of 118 self-contained marketing skills organized into 8
-categories. It follows the Vercel Labs `skills` CLI layout and must remain
-discoverable with:
+It is a library of 120 self-contained skills — 118 marketing skills plus 2
+authoring meta-skills — organized into 9 categories. It follows the Vercel
+Labs `skills` CLI layout and must remain discoverable with:
 
 ```bash
 npx skills add https://github.com/gestel-ai/skills --list
@@ -37,7 +37,7 @@ skills/
       evals/{evals.json,promptfooconfig.yaml}
 ```
 
-Categories and skill counts (118 total):
+Categories and skill counts (120 total):
 
 | Category | Skills | Focus |
 | --- | --- | --- |
@@ -49,6 +49,7 @@ Categories and skill counts (118 total):
 | media | 2 | Image and short-form video generation planning. |
 | reporting | 2 | Performance math, RevOps, and measurement. |
 | seo | 35 | Search and AI-search optimization across the SEO lifecycle. |
+| meta | 2 | Agent skill and goal authoring meta-skills (`goalify`, `skillify`). |
 
 Keep all three discovery/guidance paths working:
 
@@ -63,7 +64,9 @@ Keep all three discovery/guidance paths working:
 - `AGENTS.md` is the canonical agent guidance file.
 - `CLAUDE.md` should stay as a thin `@AGENTS.md` import wrapper.
 - Skill identifiers are lowercase kebab-case with a `gestel-` prefix
-  (e.g. `gestel-ads`, `gestel-blog-audit`).
+  (e.g. `gestel-ads`, `gestel-blog-audit`). The two authoring meta-skills in
+  `skills/meta/` are the exception: they keep their original unprefixed names
+  `goalify` and `skillify`.
 - A skill lives at `skills/<category>/<name>/` and its `SKILL.md` frontmatter
   `name` matches the directory name exactly.
 

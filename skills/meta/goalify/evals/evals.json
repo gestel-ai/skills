@@ -4,10 +4,11 @@
     {
       "id": 1,
       "prompt": "이 리팩터링 작업을 /goal로 끝까지 돌릴 수 있게 goal prompt로 바꿔줘. 결제 모듈 경계를 정리하고 기존 테스트는 계속 통과해야 해.",
-      "expected_output": "Should trigger goalify. Should produce a copy-pastable /goal prompt with a measurable refactor outcome, test verification, constraints around existing behavior, checkpointed iteration, and a blocked stop condition.",
+      "expected_output": "Should trigger goalify. Should write GOAL.md with a measurable refactor outcome, test verification, constraints around existing behavior, checkpointed iteration, and a blocked stop condition, then return the /goal @GOAL.md invocation.",
       "assertions": [
-        "Returns a fenced text block beginning with /goal",
-        "Writes the fenced /goal prompt in English even though the request is Korean",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
+        "Writes GOAL.md in English even though the request is Korean",
         "Names the desired end state",
         "Includes verification through tests or type/lint checks",
         "Preserves existing behavior as a constraint",
@@ -19,8 +20,10 @@
     {
       "id": 2,
       "prompt": "지금 설명한 버그 헌트를 Codex goal 기능용 프롬프트로 만들어줘. 재현되면 고치고, 재현이 안 되면 어디까지 확인했는지 남겨야 해.",
-      "expected_output": "Should trigger goalify. Should draft a Goal prompt that separates success from blocked investigation, requires reproduction evidence, fix verification, and a final report if reproduction is not possible.",
+      "expected_output": "Should trigger goalify. Should write GOAL.md (targeting Codex when asked) that separates success from blocked investigation, requires reproduction evidence, fix verification, and a final report if reproduction is not possible, then return the Codex /goal invocation referencing the file.",
       "assertions": [
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal invocation that references GOAL.md",
         "Requires reproduction evidence before claiming a fix",
         "Includes commands, logs, or test evidence as verification",
         "Distinguishes fixed, unreproduced, and blocked outcomes",
@@ -32,8 +35,10 @@
     {
       "id": 3,
       "prompt": "평가 스크립트 점수가 90점 넘을 때까지 이미지 생성 프롬프트를 계속 개선하게 하는 goal을 써줘.",
-      "expected_output": "Should trigger goalify. Should use an eval-driven improvement loop with baseline scoring, one focused change per iteration, artifact inspection when relevant, score logging, and a clear stopping threshold.",
+      "expected_output": "Should trigger goalify. Should write GOAL.md with an eval-driven improvement loop with baseline scoring, one focused change per iteration, artifact inspection when relevant, score logging, and a clear stopping threshold, then return the /goal @GOAL.md invocation.",
       "assertions": [
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
         "Uses score threshold as the stopping condition",
         "Requires baseline and repeated eval runs",
         "Includes one-focused-change iteration policy",
@@ -46,9 +51,9 @@
     {
       "id": 4,
       "prompt": "이 failing test 직접 고쳐줘.",
-      "expected_output": "Should not trigger goalify by itself. The user is asking for implementation, not a Goal prompt. The agent should debug/fix directly using the normal development workflow unless the user asks to convert it into a Goal.",
+      "expected_output": "Should not trigger goalify by itself. The user is asking for implementation, not a Goal. The agent should debug/fix directly using the normal development workflow unless the user asks to convert it into a Goal.",
       "assertions": [
-        "Does not produce a /goal prompt as the primary artifact",
+        "Does not write GOAL.md or produce a /goal invocation as the primary artifact",
         "Treats the request as direct implementation work",
         "Does not ask goalify-specific questions"
       ],
@@ -60,7 +65,7 @@
       "expected_output": "Should not trigger goalify. Keyword overlap with goals is not enough; this is document organization or editing, not a request for Codex/Claude Goal functionality.",
       "assertions": [
         "Recognizes keyword overlap is not sufficient",
-        "Does not generate a /goal prompt",
+        "Does not write GOAL.md or produce a /goal invocation",
         "Handles the document task directly or routes to a documentation skill"
       ],
       "files": []
@@ -68,7 +73,7 @@
     {
       "id": 6,
       "prompt": "좋은 goal 하나 만들어줘.",
-      "expected_output": "Should trigger goalify but recognize missing task intent. Should ask one concise clarification or provide a minimal fill-in template rather than inventing a fake objective.",
+      "expected_output": "Should trigger goalify but recognize missing task intent. Should ask one concise clarification or provide a minimal fill-in GOAL.md template rather than inventing a fake objective.",
       "assertions": [
         "Does not fabricate a specific project objective",
         "Asks for the desired work or provides a fill-in template",
@@ -80,11 +85,12 @@
     {
       "id": 7,
       "prompt": "Claude Code에서 쓸 /goal 프롬프트로 바꿔줘. v2.1.139 이상에서 돌아갈 거고, 한 번에 너무 오래 돌면 20턴에서 멈추게 해줘.",
-      "expected_output": "Should trigger goalify. Should target Claude Code syntax and lifecycle assumptions, include a turn bound, and avoid Codex-only command details unless comparing is requested.",
+      "expected_output": "Should trigger goalify. Should write GOAL.md targeting Claude Code syntax and lifecycle assumptions, include a turn bound, return the /goal @GOAL.md invocation, and avoid Codex-only command details unless comparing is requested.",
       "assertions": [
         "Targets Claude Code rather than defaulting to Codex-specific phrasing",
-        "Includes the requested 20-turn bound",
-        "Keeps the prompt copy-pastable",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
+        "Includes the requested 20-turn bound in GOAL.md",
         "Does not include irrelevant Codex-only feature setup"
       ],
       "files": []
@@ -92,11 +98,12 @@
     {
       "id": 8,
       "prompt": "다음 agent가 새 세션에서 바로 이어서 실행할 수 있게 continuation goal prompt를 만들어줘.",
-      "expected_output": "Should trigger goalify. Should tell the user to open a fresh session before pasting the Goal, then provide a fenced /goal prompt. The new-session instruction should be outside the /goal block, not part of the objective or completion condition.",
+      "expected_output": "Should trigger goalify. Should tell the user to open a fresh session before running /goal @GOAL.md, then write GOAL.md and return the invocation. The new-session instruction should be outside GOAL.md and the /goal line, not part of the objective or completion condition.",
       "assertions": [
-        "Includes a short fresh-session instruction before the fenced text block",
-        "Returns a fenced text block beginning with /goal",
-        "Does not put the fresh-session instruction inside the /goal objective",
+        "Includes a short fresh-session instruction outside GOAL.md and the /goal line",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
+        "Does not put the fresh-session instruction inside GOAL.md or the /goal line",
         "Includes context to read first",
         "Includes verification and blocked stop conditions"
       ],
@@ -105,23 +112,24 @@
     {
       "id": 9,
       "prompt": "Codex /goal 명령이 지금 최신 버전에서 어떤 옵션을 지원하는지 알려줘.",
-      "expected_output": "Should not trigger goalify as the primary workflow unless the user asks to shape a Goal prompt. Should route to current product documentation or local CLI verification because this is a freshness-sensitive documentation question.",
+      "expected_output": "Should not trigger goalify as the primary workflow unless the user asks to shape a Goal. Should route to current product documentation or local CLI verification because this is a freshness-sensitive documentation question.",
       "assertions": [
-        "Recognizes this as documentation lookup rather than Goal prompt shaping",
+        "Recognizes this as documentation lookup rather than Goal shaping",
         "Does not rely on local snapshot references as confirmed-current without verification",
         "Uses official or local runtime verification before making current-version claims",
-        "Does not output a /goal prompt as the primary artifact"
+        "Does not write GOAL.md or produce a /goal invocation as the primary artifact"
       ],
       "files": []
     },
     {
       "id": 10,
       "prompt": "한국어로 상황 설명할게. 이 기능 개발을 다음 세션에서 끝까지 돌릴 수 있는 goal prompt로 만들어줘.",
-      "expected_output": "Should trigger goalify. Should answer user-facing guidance in Korean if appropriate, but the fenced /goal prompt itself should be written in English by default unless the user explicitly asks for a Korean Goal.",
+      "expected_output": "Should trigger goalify. Should answer user-facing guidance in Korean if appropriate, but GOAL.md itself should be written in English by default unless the user explicitly asks for a Korean Goal, then return the /goal @GOAL.md invocation.",
       "assertions": [
         "Includes any user-facing explanation in Korean or concise bilingual form",
-        "Returns a fenced text block beginning with /goal",
-        "Writes the fenced /goal prompt in English by default",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
+        "Writes GOAL.md in English by default",
         "Does not translate exact file paths, commands, or product names unnecessarily",
         "Includes verification, constraints, iteration, and blocked stop conditions"
       ],
@@ -130,9 +138,10 @@
     {
       "id": 11,
       "prompt": "20개 패키지의 API migration readiness를 확인하고 필요한 작은 수정까지 하게 하는 /goal prompt를 만들어줘.",
-      "expected_output": "Should trigger goalify. Should produce a /goal prompt with a measurable migration-readiness outcome, package-group verification, and a delegation plan that uses parallel subagents or workers only after assigning disjoint package ownership. Each worker should return changed files, test evidence, blockers, and a structured report, while the main agent integrates results and runs final verification.",
+      "expected_output": "Should trigger goalify. Should write GOAL.md with a measurable migration-readiness outcome, package-group verification, and a delegation plan that uses parallel subagents or workers only after assigning disjoint package ownership, then return the /goal @GOAL.md invocation. Each worker should return changed files, test evidence, blockers, and a structured report, while the main agent integrates results and runs final verification.",
       "assertions": [
-        "Returns a fenced text block beginning with /goal",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
         "Includes package-group or shard ownership for parallel workers",
         "Requires non-overlapping worker scopes",
         "Requires each worker to report changed files, evidence, and blockers",
@@ -144,10 +153,11 @@
     {
       "id": 12,
       "prompt": "블로그 8개 locale의 SEO audit을 다음 세션에서 이어서 끝낼 수 있게 continuation goal prompt로 만들어줘.",
-      "expected_output": "Should trigger goalify. Should recommend a fresh session outside the fenced block, then produce a /goal prompt that uses locale-scoped parallel audit roles with a shared rubric, structured findings, duplicate/cannibalization checks, final cross-locale synthesis, verification evidence, and a blocked stop condition.",
+      "expected_output": "Should trigger goalify. Should recommend a fresh session outside GOAL.md and the /goal line, then write GOAL.md that uses locale-scoped parallel audit roles with a shared rubric, structured findings, duplicate/cannibalization checks, final cross-locale synthesis, verification evidence, and a blocked stop condition, and return the /goal @GOAL.md invocation.",
       "assertions": [
-        "Includes fresh-session guidance outside the fenced block",
-        "Returns a fenced text block beginning with /goal",
+        "Includes fresh-session guidance outside GOAL.md and the /goal line",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
         "Defines locale-scoped parallel audit roles",
         "Requires a shared rubric and structured findings",
         "Requires final cross-locale synthesis",
@@ -158,9 +168,10 @@
     {
       "id": 13,
       "prompt": "payment refactor를 끝까지 돌릴 goal prompt로 만들어줘. shared DB schema랑 subscription state가 얽혀 있어.",
-      "expected_output": "Should trigger goalify. Should not blindly recommend parallel implementation. Should preserve a serial owner for shared DB schema and subscription-state changes, optionally use read-only subagent review after checkpoints, require migration/test verification, and explain that overlapping shared state makes parallel writers risky.",
+      "expected_output": "Should trigger goalify. Should not blindly recommend parallel implementation. Should write GOAL.md that preserves a serial owner for shared DB schema and subscription-state changes, optionally use read-only subagent review after checkpoints, require migration/test verification, explain that overlapping shared state makes parallel writers risky, and return the /goal @GOAL.md invocation.",
       "assertions": [
-        "Returns a fenced text block beginning with /goal",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
         "Avoids parallel writers for shared DB schema and subscription state",
         "Uses serial ownership or read-only specialist review instead",
         "Explains shared-state risk when useful",
@@ -172,9 +183,10 @@
     {
       "id": 14,
       "prompt": "spawn 가능한 최대 worker들을 써서 이미지 후보 500개를 shard별로 생성/검수하는 goal prompt를 만들어줘.",
-      "expected_output": "Should trigger goalify. Should honor the explicit worker-fanout request while keeping it operationally safe: define shard ownership, slot lifecycle, result paths, duplicate-hash checks, structured candidate/failure logs, aggregation before completion, final coverage verification, and a stop condition for exhausted worker capacity or unsafe result collection.",
+      "expected_output": "Should trigger goalify. Should honor the explicit worker-fanout request while keeping it operationally safe by writing GOAL.md that defines shard ownership, slot lifecycle, result paths, duplicate-hash checks, structured candidate/failure logs, aggregation before completion, final coverage verification, and a stop condition for exhausted worker capacity or unsafe result collection, then return the /goal @GOAL.md invocation.",
       "assertions": [
-        "Returns a fenced text block beginning with /goal",
+        "Writes GOAL.md containing the Goal contract",
+        "Returns a /goal @GOAL.md invocation",
         "Defines shard ownership and worker slot lifecycle",
         "Requires fixed result paths and structured logs",
         "Requires duplicate checks before aggregation",

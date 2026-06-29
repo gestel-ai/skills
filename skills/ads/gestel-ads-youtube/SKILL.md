@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-youtube
 description: 'Use when reviewing or planning YouTube / video ads for GESTEL from user-supplied data — skippable in-stream (TrueView), non-skippable, bumper, YouTube Shorts (9:16), Demand Gen (VAC successor), and Connected TV (CTV) — covering campaign-type fit, the ABCD creative read, hook/production/volume scoring, audience targeting, frequency, attribution gaps, and a weighted YouTube Health Score. Triggers: YouTube Ads, video ads, pre-roll, bumper ads, skippable in-stream, YouTube Shorts ads, Demand Gen, VAC, CTV, shoppable CTV, "score my YouTube video campaigns." Near-miss: full Google Search/PMax audits go to gestel-ads-google; cross-channel budget to gestel-ads-budget; static creative reads to gestel-ads-intelligence; video production to gestel-video / gestel-creative-package. Scope is read-and-recommend on user data — no hidden credentials, paid provider adapters, live account mutation, or upstream scripts needed; freshness-sensitive platform facts are flagged as priors.'
+license: MIT
 ---
 
 # GESTEL Ads YouTube

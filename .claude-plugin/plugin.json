@@ -1,5 +1,6 @@
 {
   "name": "GESTEL",
+  "license": "MIT",
   "skills": [
     "./skills/ads/gestel-ads",
     "./skills/ads/gestel-ads-amazon",
@@ -81,6 +82,7 @@
     "./skills/marketing/gestel-sales-enablement",
     "./skills/marketing/gestel-signup",
     "./skills/media/gestel-image",
+    "./skills/media/gestel-moodboard",
     "./skills/media/gestel-video",
     "./skills/meta/goalify",
     "./skills/meta/skillify",

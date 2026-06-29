@@ -1,6 +1,7 @@
 ---
 name: gestel-signup
 description: Use when optimizing signup, registration, account creation, or trial activation flows — including planning, auditing, drafting, or recommending changes. Triggers include "signup conversions," "registration friction," "signup form optimization," "free trial signup," "reduce signup dropoff," "account creation flow," "people aren't signing up," "signup abandonment," "trial conversion rate," "nobody completes registration," "too many steps to sign up," or "simplify our signup." Works from user-provided context and stable CRO judgment; does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. For post-signup onboarding or non-account lead-capture forms, route to the relevant adapter/skill.
+license: MIT
 ---
 
 # Signup Flow CRO

@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-local
 description: 'Use when working on project-local local-SEO analysis in gestel-seo-local — auditing or improving how a business ranks in the Google map/local pack and in local organic + AI search from a user-provided URL/HTML, covering Google Business Profile signals, NAP consistency, citations, reviews, location-page quality, multi-location architecture, and LocalBusiness schema. Detects business type (brick-and-mortar, service-area, hybrid) and vertical. Triggers: "local SEO," "Google Business Profile," "GBP," "map pack," "local pack," "NAP consistency," "citations," "service area business," "multi-location SEO." Near-miss (do NOT use): general/technical site audits (gestel-seo-audit), AI-search/GEO citability (the ai-seo/geo family), broad structured-data implementation (gestel-blog-schema). Local scope; no credentials, paid adapters, live mutation, or upstream crawl/SERP scripts.'
+license: MIT
 metadata:
   version: 1.0.0
 ---

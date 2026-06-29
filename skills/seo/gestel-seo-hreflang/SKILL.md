@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-hreflang
 description: Use when validating, debugging, or generating hreflang and international-SEO markup for multi-language or multi-region sites — checking self-referencing and return tags, x-default, ISO language/region codes, canonical alignment, and protocol/cross-domain consistency, then emitting correct HTML link tags, HTTP headers, or an XML sitemap, plus optional cultural-adaptation, content-parity, locale-format, and machine-translation QA passes. Triggers include "hreflang", "i18n SEO", "international SEO", "multi-language", "multi-region", "language tags", "x-default", "return tags", "hreflang sitemap", "Sprachversionen pruefen". Reasons over user-provided URLs, exports, and files plus stable SEO judgment; does not require hidden credentials, paid providers, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # SEO Hreflang & International SEO

@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-localize
 description: Use when culturally adapting an already-translated blog post so it reads as locally authored for a target market (German/DACH, French/Francophone, Spanish/Hispanic, Japanese, or a custom locale) - swapping brand examples, statistics sources, CTAs, legal references, and formality (Sie/du, tu/vous, register). Triggers include "localize blog", "blog localize", "cultural adaptation", "adapt for Germany/France", "lokalisieren", "localiser", "adaptar". This is the adaptation pass that runs after translation; it does not require hidden credentials, paid providers, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Localize, Cultural Deep-Adaptation

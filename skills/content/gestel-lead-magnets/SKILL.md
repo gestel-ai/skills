@@ -1,6 +1,7 @@
 ---
 name: gestel-lead-magnets
 description: Use when working on project-local lead magnets tasks migrated into gestel-lead-magnets, including planning, drafting, analysis, review, or recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Trigger on "lead magnet," "gated content," "content upgrade," "downloadable," "ebook," "cheat sheet," "checklist," "template download," "opt-in," "freebie," "PDF download," "resource library," "content offer," "email capture content," "Notion template," "spreadsheet template," or "what should I give away for emails."
+license: MIT
 ---
 
 # Lead Magnets

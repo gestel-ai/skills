@@ -1,6 +1,7 @@
 ---
 name: gestel-seo
 description: 'Use when a user asks for SEO help broadly or wants an end-to-end SEO engagement across the gestel-seo-* family — "do an SEO audit," "improve my SEO," "I''m not ranking," "review my whole site for SEO," "build an SEO plan/strategy," "where do I start with SEO." This is the orchestrator/entry point: detect site/business type, route to the right specialist, and synthesize one prioritized, health-scored action plan. For a single focused job invoke the specialist directly (gestel-seo-audit, -page, -technical, -content, -schema, -geo, -local, -plan, -cluster, -backlinks, -hreflang, -images, -ecommerce, -programmatic, etc.). Near-miss (do NOT use): writing content (gestel-copywriting/gestel-blog-write), keyword/topic planning (gestel-content-strategy), CRO (gestel-cro), structured-data (gestel-blog-schema). Works on user-provided URLs, HTML, exports, and crawls with local SEO judgment; needs no hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts.'
+license: MIT
 metadata:
   version: 1.0.0
 ---

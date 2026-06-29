@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-repurpose
 description: Use when repurposing or adapting a blog post into channel-native pieces — Twitter/X threads, LinkedIn articles, YouTube scripts, Reddit discussion posts, or email newsletter excerpts. Triggers include "repurpose", "blog repurpose", "share blog", "turn this post into", "twitter thread", "linkedin post", "youtube script", "reddit post", "newsletter excerpt". Plans, drafts, and formats from user-provided content; does not publish, mutate live accounts, assume paid providers/credentials, or rely on missing upstream scripts.
+license: MIT
 ---
 
 # Blog Repurpose: Cross-Platform Content Adaptation

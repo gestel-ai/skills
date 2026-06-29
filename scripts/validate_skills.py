@@ -34,11 +34,17 @@ def run(command: list[str]) -> None:
 
 
 def skill_dirs() -> list[Path]:
-    _ignore = {".git", "node_modules", ".ruff_cache", ".venv", "reference", "references", "__pycache__"}
+    _ignore = {
+        ".git",
+        "node_modules",
+        ".ruff_cache",
+        ".venv",
+        "reference",
+        "references",
+        "__pycache__",
+    }
     return sorted(
-        p.parent
-        for p in ROOT.rglob("SKILL.md")
-        if not _ignore.intersection(p.parts)
+        p.parent for p in ROOT.rglob("SKILL.md") if not _ignore.intersection(p.parts)
     )
 
 
@@ -47,7 +53,14 @@ def has_files(paths: list[Path], suffixes: set[str]) -> bool:
 
 
 def all_files() -> list[Path]:
-    ignored_parts = {".ruff_cache", ".venv", "node_modules", ".git", "reference", "references"}
+    ignored_parts = {
+        ".ruff_cache",
+        ".venv",
+        "node_modules",
+        ".git",
+        "reference",
+        "references",
+    }
     files: list[Path] = []
     for path in ROOT.rglob("*"):
         if not path.is_file():

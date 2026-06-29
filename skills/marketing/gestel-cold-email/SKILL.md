@@ -1,6 +1,7 @@
 ---
 name: gestel-cold-email
 description: Use when working on project-local cold email tasks migrated into gestel-cold-email, including planning, drafting, analysis, review, or recommendations for B2B cold outreach, prospecting emails, outbound campaigns, SDR/sales development emails, subject lines, opening lines, CTAs, personalization, and multi-touch follow-up sequences. Also use when the user mentions "cold outreach," "prospecting email," "outbound email," "email to leads," "reach out to prospects," "sales email," "follow-up sequence," or "nobody's replying to my emails." Does not require hidden credentials, paid provider adapters, live account mutation, CRM sends, or missing upstream runtime scripts. For warm/lifecycle email, use gestel-emails. For sales collateral beyond emails, use gestel-sales-enablement. For building/qualifying the prospect list, use gestel-prospecting.
+license: MIT
 ---
 
 # Cold Email Writing

@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-competitor
 description: Use when working on project-local competitor ad intelligence in gestel-ads-competitor — analyzing competitor ad copy, creative strategy, messaging themes, keyword targeting, estimated spend, and competitive gaps across Google, Meta, LinkedIn, TikTok, Microsoft, and Apple Ads. Triggers include competitor ads, ad spy, competitive ad analysis, competitor PPC, ad intelligence, Meta Ad Library, Facebook Ad Library, Google Ads Transparency, competitor creative, ad teardown, or competitor research. Planning, drafting, framework-driven analysis, and recommendations from user-supplied or dated research only — no hidden credentials, paid provider adapters (SEMrush/SpyFu), live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # GESTEL Ads Competitor Intelligence

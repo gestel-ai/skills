@@ -12,6 +12,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: astral-sh/setup-uv@v5
+      - name: Install ripgrep
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+
+      - name: Validate agent guidance wrapper
+        run: test "$(cat CLAUDE.md)" = "@AGENTS.md"
+
       - name: Validate plugin manifest
         run: |
           node - <<'NODE'
@@ -19,10 +29,11 @@ jobs:
           const path = require('path');
           const manifest = JSON.parse(fs.readFileSync('.claude-plugin/plugin.json', 'utf8'));
 
-          if (!manifest.name) {
-            throw new Error('plugin manifest is missing name');
+          if (manifest.name !== 'GESTEL') {
+            throw new Error('plugin manifest name must be GESTEL');
           }
 
+          let bad = 0;
           for (const skillPath of manifest.skills || []) {
             if (!skillPath.startsWith('./')) {
               throw new Error(`skill path must start with ./, got ${skillPath}`);
@@ -30,13 +41,67 @@ jobs:
 
             const skillFile = path.join(skillPath, 'SKILL.md');
             if (!fs.existsSync(skillFile)) {
-              throw new Error(`missing ${skillFile}`);
+              console.log('MISSING', skillFile);
+              bad++;
             }
           }
+          if (bad) throw new Error(`FAIL ${bad} missing SKILL.md`);
+          console.log(`OK ${manifest.skills.length}`);
           NODE
-      - name: Validate agent guidance wrapper
-        run: test "$(cat CLAUDE.md)" = "@AGENTS.md"
+
+      - name: Validate SKILL.md name matches directory
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          function* walk(d) {
+            for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+              const p = path.join(d, e.name);
+              if (e.isDirectory()) yield* walk(p);
+              else if (e.name === 'SKILL.md') yield p;
+            }
+          }
+          let bad = 0, n = 0;
+          for (const f of walk('skills')) {
+            n++;
+            const dir = path.basename(path.dirname(f));
+            const t = fs.readFileSync(f, 'utf8');
+            const m = t.match(/^---\n([\s\S]*?)\n---/);
+            const nm = m && m[1].match(/^name:\s*(.+)$/m);
+            const name = nm ? nm[1].trim().replace(/^['"]|['"]$/g, '') : null;
+            if (name !== dir) {
+              console.log('MISMATCH', f, 'name=' + name, 'dir=' + dir);
+              bad++;
+            }
+          }
+          if (bad) throw new Error(`FAIL ${bad} name/dir mismatches`);
+          console.log(`OK ${n} names match dirs`);
+          NODE
+
+      - name: Markdown lint
+        run: pnpm dlx markdownlint-cli2 'skills/**/*.md'
+
+      - name: Promptfoo eval configs are current
+        run: uv run scripts/promptfoo_skill_evals.py --check
+
+      - name: Self-containment (no non-provenance upstream runtime deps)
+        run: |
+          set +o pipefail  # a zero-match grep exits 1; the test below is the real check
+          shopt -s globstar
+          count=$(grep -rn "references/skills/\|references/source-repos/" skills/**/SKILL.md \
+            | grep -viE "distill|provenance|source path|upstream|notice|commit|licen|merged|narrowed|source map" \
+            | wc -l | tr -d ' ')
+          echo "non-provenance upstream references: $count"
+          test "$count" -eq 0
+
+      - name: Old-naming guard
+        # The first char of each token is bracketed so this workflow does not
+        # match its own guard pattern; real occurrences still match.
+        run: |
+          ! rg -n "[G]estel|[p]roduct-engineering|[G]ESTEL-skills" README.md skills.sh.json .claude-plugin .github skills
+
       - name: List discoverable skills
         run: npx --yes skills add . --list
+
       - name: Resolve skill prompt
         run: npx --yes skills use . --skill gestel-ads >/tmp/gestel-ads.txt

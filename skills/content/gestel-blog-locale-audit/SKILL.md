@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-locale-audit
 description: Use when auditing a directory of multilingual blog content for completeness, consistency, hreflang correctness, meta-tag parity, and freshness — building a translation coverage matrix, flagging stale or out-of-parity translations, validating hreflang and schema, and emitting a prioritized fix report. Triggers include "locale audit", "blog locale-audit", "check translations", "multilingual audit", "translation check", "hreflang check", "Uebersetzungen pruefen". Reasons over user-provided files and stable editorial/SEO judgment; does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Locale Audit

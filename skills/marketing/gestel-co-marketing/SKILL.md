@@ -1,6 +1,7 @@
 ---
 name: gestel-co-marketing
 description: Use when working on project-local co-marketing tasks migrated into gestel-co-marketing, including finding co-marketing or partner-marketing partners, scoring partnership fit, planning joint campaigns (content, webinars/events, integration, community), drafting partner outreach, structuring co-marketing agreements, and measuring results — without hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Co-Marketing

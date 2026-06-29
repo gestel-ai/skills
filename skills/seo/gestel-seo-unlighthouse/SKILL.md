@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-unlighthouse
 description: 'Use when doing site-wide (multi-page) Lighthouse / Core Web Vitals work in gestel-seo-unlighthouse — interpreting an Unlighthouse or Lighthouse report, triaging performance / accessibility / best-practices / SEO scores across many routes, checking for a site-wide CWV regression after a deploy, decomposing a slow LCP, or planning a multi-page lab audit. Triggers include Unlighthouse, Lighthouse, Core Web Vitals, LCP/INP/CLS/TBT/FCP, PageSpeed at scale, site-wide audit, performance regression, or "audit every page." Near-miss routing: single-URL field/CrUX data → seo-google PSI/CrUX skill; structured data → gestel-blog-schema; on-page content SEO → gestel-blog-seo-check. Analysis, interpretation, prioritization, and planning only — no hidden credentials, no paid provider, no live account mutation, and no dependence on missing upstream crawler/CLI scripts (the crawl+Lighthouse run itself is a Boundary, not a feature of this skill).'
+license: MIT
 ---
 
 # Site-wide Lighthouse / Core Web Vitals Audit

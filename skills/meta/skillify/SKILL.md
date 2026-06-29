@@ -1,6 +1,7 @@
 ---
 name: skillify
 description: Use when designing, writing, reviewing, refactoring, or testing project-scoped agent skills, SKILL.md files, skill suites, skill descriptions, evals/evals.json, bundled references/scripts/assets, skill-trigger conflicts, or skill authoring best practices.
+license: MIT
 ---
 
 # Skillify

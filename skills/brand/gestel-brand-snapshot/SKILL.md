@@ -1,6 +1,7 @@
 ---
 name: gestel-brand-snapshot
 description: Use when creating, updating, or reconciling the lightweight GESTEL Brand Snapshot for product-photo Meta or Instagram static ad packs, especially when product URL, product photo, logo, existing creative, banned claims, approved evidence, or competing brand context files are involved.
+license: MIT
 ---
 
 # GESTEL Brand Snapshot

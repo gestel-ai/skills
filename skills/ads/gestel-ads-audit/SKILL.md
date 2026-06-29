@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-audit
 description: 'Use when working on a project-local paid-advertising account audit in gestel-ads-audit — scoring account health and producing a prioritized fix plan from user-provided exports, screenshots, or notes across Google, Meta, LinkedIn, TikTok, Microsoft, Apple, and Amazon Ads. Triggers include audit, ad check, analyze my ads, account health check, paid media audit, paid advertising audit, ad spend audit, advertising audit, or PPC audit. Near-miss (do NOT use): writing or generating new ad creative (use gestel-creative-package/gestel-copywriting), budget/bidding-only decisions (use gestel-ads-budget), landing-page-only review (use gestel-ads-landing). Scoped to analysis, scoring, and recommendations from supplied data only — no hidden credentials, no paid provider adapters, no live account mutation, and no upstream parallel-subagent or report-render scripts.'
+license: MIT
 ---
 
 # Ads Account Audit

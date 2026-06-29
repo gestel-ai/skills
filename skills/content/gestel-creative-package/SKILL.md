@@ -1,6 +1,7 @@
 ---
 name: gestel-creative-package
 description: Use when planning, generating, validating, or exporting GESTEL product-photo Creative Packages for Meta or Instagram static ad image packs, including template family selection, slot contracts, angle generation, Korean copy constraints, first-pack defaults, ratio expansion, variant IDs, UTM naming, performance-driven iteration, or package manifest checks.
+license: MIT
 ---
 
 # GESTEL Creative Package

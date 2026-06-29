@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-ahrefs
 description: 'Use when working on project-local Ahrefs-style backlink and organic-search analysis migrated into gestel-seo-ahrefs — interpreting referring domains, backlink/anchor profiles, follow vs nofollow ratios, Domain Rating (DR) / URL Rating (UR), organic keyword and traffic-distribution data, Content Explorer results, and toxic-link risk, then turning them into a prioritized link-building or recovery plan. Works from user-provided exports (CSV/JSON/screenshots) and stable SEO judgment. Near-miss: this is the analyst/strategy layer, not the live data feed — fetching fresh metrics from the Ahrefs API requires a paid account that is NOT present here. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts; the actual live pull routes to an Ahrefs adapter or user-supplied data. NOT for on-page/technical audits or content writing (route to the matching SEO/blog task).'
+license: MIT
 ---
 
 # SEO — Ahrefs Analyst

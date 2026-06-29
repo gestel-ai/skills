@@ -1,6 +1,7 @@
 ---
 name: gestel-site-architecture
 description: Use when working on project-local site architecture tasks, including planning, mapping, or restructuring a website's page hierarchy, navigation, URL structure, or internal linking — sitemaps, information architecture (IA), nav design, breadcrumbs, "what pages do I need," or "how should I organize my site." Works from user-provided context and stable IA/SEO judgment, without hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. NOT for XML sitemaps or technical SEO audits (route to an SEO task).
+license: MIT
 ---
 
 # Site Architecture

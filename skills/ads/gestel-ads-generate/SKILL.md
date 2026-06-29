@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-generate
 description: Use when planning and specifying paid-ad image creative from a campaign brief and brand profile — turning an image-generation brief into per-platform prompts, choosing a creative-direction mode, picking correct ad dimensions/safe zones, estimating creative cost, defining the asset/manifest layout, and setting a quality gate. Covers "generate ads", "create ad creatives", "make ad images", "generate visuals from brief", "campaign image briefs", "platform ad sizes", and named tools like banana/nanobanana, Flux, gpt-image-1, Stability, Replicate, Ideogram. Excludes the actual pixel render (no paid image provider, MCP, API key, banana-claude, or upstream generation script is assumed here — route rendering to an image-generation adapter or user-supplied assets), and excludes any live ad-account mutation.
+license: MIT
 ---
 
 # GESTEL Ads Generate

@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-chart
 description: Use when generating dark-mode-compatible inline SVG data-visualization charts for blog posts (horizontal bar, grouped bar, donut, line, lollipop, area, radar) from user-provided data, with accessible markup and source attribution, for HTML or JSX/MDX output. Triggers include "blog chart", "generate chart", "data visualization", "svg chart", "visualize this data", or when 3+ comparable metrics / trends / before-after data appear in a draft. Does not source images, call paid providers, hit live data APIs, mutate accounts, or assume upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Chart

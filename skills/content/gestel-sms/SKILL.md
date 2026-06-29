@@ -1,6 +1,7 @@
 ---
 name: gestel-sms
 description: Use when working on project-local SMS or MMS marketing tasks in gestel-sms — planning, drafting, reviewing, or optimizing welcome flows, abandoned cart texts, post-purchase, win-back, promotional or transactional/auth SMS, plus compliance (TCPA, A2P 10DLC, GDPR, CASL), platform selection, copy, and measurement. Also use when the user mentions "SMS marketing," "text message campaigns," "SMS sequence," "abandoned cart text," "Klaviyo SMS," "Postscript," "Attentive," "Twilio," "A2P 10DLC," "TCPA," "SMS compliance," "short code," "toll-free SMS," "MMS," or "SMS vs email." Excludes hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # SMS Marketing

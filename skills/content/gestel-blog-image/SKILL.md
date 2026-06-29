@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-image
 description: Use when working on project-local blog image tasks migrated into gestel-blog-image, including planning blog hero/inline/OG/divider images, acting as creative director to construct optimized 6-component image-generation prompts, selecting a domain mode (Editorial, Product, Landscape, UI/Web, Infographic, Abstract), choosing aspect ratios and dimensions, writing alt text and cover/OG frontmatter, and reviewing or refining existing image prompts. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts; actual image rendering routes to an image-generation adapter.
+license: MIT
 ---
 
 # Blog Image

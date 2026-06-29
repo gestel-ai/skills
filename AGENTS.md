@@ -7,7 +7,7 @@ This file gives coding agents guidance when working in this repository.
 This is the public GESTEL skill repository at
 `https://github.com/gestel-ai/skills`.
 
-It is a library of 120 self-contained skills — 118 marketing skills plus 2
+It is a library of 121 self-contained skills — 119 marketing skills plus 2
 authoring meta-skills — organized into 9 categories. It follows the Vercel
 Labs `skills` CLI layout and must remain discoverable with:
 
@@ -23,6 +23,7 @@ Individual skills are installed or used by name, e.g.
 ```text
 AGENTS.md
 CLAUDE.md
+LICENSE
 .claude-plugin/
   plugin.json
 skills.sh.json
@@ -37,7 +38,7 @@ skills/
       evals/{evals.json,promptfooconfig.yaml}
 ```
 
-Categories and skill counts (120 total):
+Categories and skill counts (121 total):
 
 | Category | Skills | Focus |
 | --- | --- | --- |
@@ -46,7 +47,7 @@ Categories and skill counts (120 total):
 | content | 39 | Blog, copywriting, and multi-channel content production. |
 | intelligence | 5 | Competitor, customer, and creative intelligence for growth decisions. |
 | marketing | 19 | Growth, lifecycle, pricing, launch, and go-to-market workflows. |
-| media | 2 | Image and short-form video generation planning. |
+| media | 3 | Image, short-form video, and visual moodboard generation planning. |
 | reporting | 2 | Performance math, RevOps, and measurement. |
 | seo | 35 | Search and AI-search optimization across the SEO lifecycle. |
 | meta | 2 | Agent skill and goal authoring meta-skills (`goalify`, `skillify`). |
@@ -94,6 +95,14 @@ When adding or renaming a skill, update all of these together:
   colon immediately followed by a space; only allowed keys (`name`,
   `description`, `allowed-tools`, `license`,
   `metadata`).
+- Every skill declares `license: MIT` in its `SKILL.md` frontmatter, matching
+  the repo `LICENSE` and the `license` field in `.claude-plugin/plugin.json`.
+  Keep this all-or-none: either all skills carry the key or none do.
+- Skill `description` text starts with `Use when …` so triggering reads
+  consistently. Two intentional exceptions keep their original openers:
+  `skills/content/gestel-blog` (an orchestrator description starting
+  "Orchestrator …") and `skills/content/gestel-blog-cannibalization`
+  (a detector description starting "Detect …").
 
 ## Validation
 

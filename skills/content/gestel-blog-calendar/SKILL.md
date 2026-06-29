@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-calendar
 description: 'Use when planning editorial or content calendars and publishing schedules for a blog — topic clusters, publishing cadence, content decay detection, freshness update cycles, seasonal hooks, content mix, and distribution scheduling. Triggers include "editorial calendar", "content calendar", "blog calendar", "publishing schedule", "blog plan", "content plan", "what should I write". Project-local: works from user-provided context and stable editorial judgment, not hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.'
+license: MIT
 ---
 
 # Blog Calendar: Editorial Planning

@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-intelligence
 description: Use when importing, mapping, or interpreting Meta or Instagram static ad performance for GESTEL Creative Packages, especially CSV uploads, manual metrics, variant IDs, UTM content, winning template families, fatigue signals, next-test recommendations, or read-only learning without ad account API access.
+license: MIT
 ---
 
 # GESTEL Ads Intelligence

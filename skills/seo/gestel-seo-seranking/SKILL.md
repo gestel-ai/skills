@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-seranking
 description: 'Use when working on project-local SE Ranking-style AI-visibility and SEO analysis migrated into gestel-seo-seranking — designing an AI Share-of-Voice prompt set, computing and interpreting Share-of-Voice across ChatGPT, Gemini, Perplexity, Google AI Overviews, and AI Mode, reading SERP / backlink / competitor-gap exports, and turning that data into a strategy and tracking plan. Near-miss: this is the analysis, scoring framework, and interpretation layer, not a live data pull — fetching live SE Ranking data needs a paid API key the project does not have. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts (no SERANKING_API_KEY, install.sh, or unit-cost scripts); live numbers route to a SE Ranking adapter or to user-supplied exports.'
+license: MIT
 ---
 
 # SEO: SE Ranking AI Visibility

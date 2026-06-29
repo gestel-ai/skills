@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-server-side-tracking
 description: 'Use when auditing or planning a server-side measurement pipeline from user-provided evidence — server-side Google Tag Manager (sGTM), Meta CAPI / CAPI Gateway, Conversions API health, event deduplication via event_id, server/client hit-ratio targets, Event Match Quality (EMQ), pixel/tag debug walkthroughs, custom event taxonomy, and SHA-256 PII hashing discipline. Triggers include server-side tracking, sGTM, server-side GTM, server-side tagging, CAPI, Conversions API, CAPI Gateway, event deduplication, event_id, pixel debug, pixel health, Pixel/CAPI audit, first-party tracking, iOS 14.5/ATT recovery, EMQ, or server-side hit ratio. Near-miss: this is the pipeline that *feeds* attribution, not the attribution model itself — route model/lookback/credit questions elsewhere. Review, audit, scoring, and roadmap only — no hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts.'
+license: MIT
 ---
 
 # Server-Side Tracking Pipeline Audit

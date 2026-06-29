@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-translate
 description: Use when working on project-local blog translate tasks migrated into gestel-blog-translate, including SEO-optimized translation of an existing blog post into one or more target languages, preserving markdown/frontmatter/JSON-LD/SVG-chart structure, localizing keywords, meta tags, numbers, dates, currencies, and quote styles per locale, and flagging machine-translation artifacts. Triggers include "translate blog", "blog translate", "translate post", "blog auf Deutsch", "blog en espanol", "uebersetzen", "traduire", "traducir". Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Translate (SEO-Optimized)

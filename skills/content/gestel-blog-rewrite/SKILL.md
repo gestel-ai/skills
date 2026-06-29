@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-rewrite
 description: 'Use when rewriting, optimizing, refreshing, or fixing an existing blog post (local MDX/markdown/HTML file) for both Google rankings (E-E-A-T, Core Update) and AI-citation visibility (GEO/AEO) — replacing fabricated stats with sourced data, applying answer-first formatting, scrubbing AI-slop tells, injecting FAQ/citation capsules and information-gain markers, and refreshing freshness signals. Triggers include "rewrite blog", "optimize blog", "update blog", "improve blog", "fix blog", "refresh blog post", "blog optimization". Near-miss: full-site multi-post audits go to gestel-blog-audit; AI-citation-only passes to GEO tools; keyword-overlap resolution to gestel-blog-cannibalization; net-new drafts to gestel-blog-outline/brief. Works from local files and stable editorial judgment only — no hidden credentials, paid providers, live account/CMS mutation, live rank/crawl data, or missing upstream render/preflight/reviewer scripts.'
+license: MIT
 ---
 
 # Blog Rewrite: Optimize an Existing Post

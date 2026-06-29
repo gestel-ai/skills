@@ -1,6 +1,7 @@
 ---
 name: gestel-video
 description: Use when working on project-local video production tasks — planning, scripting, choosing a production approach, drafting AI-video prompts, designing programmatic/avatar/repurposing pipelines, or reviewing video plans. Triggers include "make me a video", "AI video", "video production", "Remotion", "Hyperframes", "HeyGen", "Synthesia", "Veo", "Sora", "Runway", "Kling", "Seedance", "Hailuo", "MiniMax", "Pika", "Hunyuan", "Wan", "AI avatar", "talking head video", "programmatic video", "video template", "explainer video", "product demo video", or "video pipeline". Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Video

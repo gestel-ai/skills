@@ -1,6 +1,7 @@
 ---
 name: gestel-marketing-plan
 description: Use when the user needs a comprehensive marketing plan for a client, a company they advise, or their own product. Also use when the user mentions "marketing plan," "growth plan," "GTM plan," "go-to-market plan," "AARRR plan," "90-day marketing plan," "12-month marketing roadmap," "fractional CMO plan," or "fCMO plan." Produces an exhaustive AARRR-structured (Acquisition, Activation, Retention, Referral, Revenue) plan customized to the client's budget, team, and funding stage, scored against a 17-section current-state rubric and cross-referenced to a marketing-ideas bank — as a paste-ready markdown artifact built from user-provided context, without live account mutation, hidden credentials, paid provider adapters, or missing upstream runtime scripts. For single-channel execution (ads, SEO, emails) route to the channel-specific task instead
+license: MIT
 ---
 
 <!-- Provenance: distilled from marketingskills/skills/marketing-plan/SKILL.md -->

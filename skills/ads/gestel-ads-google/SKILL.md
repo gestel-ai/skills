@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-google
 description: 'Use when auditing or analyzing Google Ads from user-provided exports — Search, Performance Max, AI Max, Display, YouTube, and Demand Gen — covering conversion tracking, wasted spend, negative-keyword strategy, account structure, keywords/Quality Score, ads/assets, and settings, plus an 80-check Health Score. Triggers include Google Ads, Google PPC, search ads audit, PMax, Performance Max, AI Max, AI Brief, broad match audit, Quality Score check, search terms audit, Smart Bidding, GAQL, or "score my Google account." Planning, analysis, review, and recommendations only — no hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Near-miss: live API pulls, Google Ads MCP writes, or account changes route out per Boundaries; budget/bidding-only requests go to gestel-ads-budget; static creative performance reads go to gestel-ads-intelligence.'
+license: MIT
 ---
 
 # Google Ads Deep Analysis

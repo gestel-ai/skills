@@ -116,6 +116,7 @@
       "description": "Image and short-form video generation planning.",
       "skills": [
         "gestel-image",
+        "gestel-moodboard",
         "gestel-video"
       ]
     },

@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-audit
 description: Use when auditing, reviewing, or diagnosing SEO issues on a site — technical, on-page, content, schema, performance, international/i18n, and AI-search readiness — and producing a prioritized action plan with a health-score model. Triggers include "SEO audit," "technical SEO," "on-page SEO," "meta tags review," "SEO health check," "why am I not ranking," "traffic dropped," "lost rankings," "not showing up in Google," "Google update hit me," "crawl errors," "indexing issues," "core web vitals," "page speed," or vague asks like "my SEO is bad." For building pages at scale see gestel-programmatic-seo; for structured data see gestel-blog-schema; for AI-search/GEO see the ai-seo family. Do NOT use for writing content (gestel-copywriting/gestel-blog-write), keyword/topic planning (gestel-content-strategy), or conversion optimization (gestel-cro). Works from user-provided URLs, HTML, exports, and crawls; needs no hidden credentials, paid adapters, live account mutation, or upstream scripts.
+license: MIT
 metadata:
   version: 2.0.0
 ---

@@ -1,6 +1,7 @@
 ---
 name: gestel-emails
 description: Use when working on project-local emails tasks migrated into gestel-emails, including planning, drafting, analysis, review, or recommendations for email sequences, drip campaigns, nurture flows, onboarding/welcome series, re-engagement, lifecycle and campaign emails. Use when the user mentions "email sequence," "drip campaign," "nurture sequence," "onboarding emails," "welcome series," "re-engagement," "email automation," "lifecycle emails," "what emails should I send," or "email cadence." Does not require hidden credentials, paid email-platform adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Email Sequence Design

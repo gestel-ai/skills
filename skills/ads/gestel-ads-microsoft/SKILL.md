@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-microsoft
 description: 'Use when reviewing or auditing Microsoft/Bing Ads from user-provided exports — UET tag and Google-import validation, syndication and Audience Network control, LinkedIn profile targeting, Copilot/PMax placement, Microsoft-unique extensions, and CPC-advantage assessment vs Google. Triggers include Microsoft Ads, Bing Ads, Bing PPC, Bing search ads, Copilot ads, Microsoft search ads, Google import audit, UET tag, or Microsoft campaign. Near-miss: not for cross-platform budget splits (use gestel-ads-budget) or generic creative learning (use gestel-ads-intelligence). Read-only methodology only — no hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts.'
+license: MIT
 ---
 
 # GESTEL Microsoft / Bing Ads Audit

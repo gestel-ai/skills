@@ -2,8 +2,6 @@
 name: gestel-seo-technical
 description: 'Use for project-local technical SEO audits of a site''s crawl/index/render foundations — crawlability, indexability, HTTPS/security headers, URL/canonical structure, mobile-first readiness, Core Web Vitals, structured-data presence, JS rendering, AI-crawler (robots.txt) policy, IndexNow, and agent-friendly page health, returning per-category scores with prioritized fixes. Triggers: "technical SEO," "crawl issues," "robots.txt," "indexing," "canonical," "Core Web Vitals," "LCP/INP/CLS," "site speed," "security headers (HSTS/CSP)," "JS rendering/SSR vs CSR," "AI crawler blocking," "GPTBot/ClaudeBot," "IndexNow." For a full multi-category audit use gestel-seo-audit; structured-data use gestel-blog-schema; hreflang use gestel-seo-hreflang; AI-search/GEO use gestel-seo-geo. Not for content writing, keyword planning, or conversion (gestel-cro). Works from user-provided URLs, HTML, headers, and crawls; local scope, no credentials, paid adapters, live mutation, or upstream scripts needed.'
 license: MIT
-metadata:
-  version: 1.0.0
 ---
 
 # Technical SEO Audit

@@ -2,8 +2,6 @@
 name: gestel-seo-plan
 description: 'Use for project-local strategic SEO planning in gestel-seo-plan — an SEO/content strategy and phased roadmap for a whole new or existing site: industry templates (SaaS, local service, e-commerce, publisher, agency, generic), competitive/content-gap analysis, site architecture and internal-linking design, schema-per-page-type plans, KPI targets, 12-month rollout. Triggers: "SEO plan/strategy/planning/roadmap," "keyword strategy," whole-site "content strategy/calendar," "site/information architecture for SEO." Near-miss (do NOT use): diagnosing a live site (gestel-seo-audit); topic/keyword ideation without a site plan (gestel-content-strategy); templated pages at scale (gestel-programmatic-seo); writing pages (gestel-copywriting/gestel-blog-write); structured data (gestel-blog-schema); navigation/URL mechanics alone (gestel-site-architecture). Works from user-provided context, URLs, and exports; no hidden credentials, paid adapters, live mutation, or upstream scripts needed.'
 license: MIT
-metadata:
-  version: 1.0.0
 ---
 
 # Strategic SEO Planning

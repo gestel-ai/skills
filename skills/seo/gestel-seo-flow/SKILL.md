@@ -2,8 +2,6 @@
 name: gestel-seo-flow
 description: 'Use when applying the FLOW model (Find, Leverage, Optimize, Win, Local) to evidence-led SEO: diagnosing which FLOW stage blocks a site/page, producing a stage deliverable from a structured FLOW prompt, keyword/intent/gap research, off-site authority planning, on-page/extraction/trust optimization, BOFU + conversion + dual-surface (search + AI-answer) Win work, or local SEO (Google Business Profile, categories, services, local meta/title/homepage rewrites). Triggers: "FLOW", "seo flow", "evidence-led SEO", "find leverage optimize win", "dual-surface scorecard", "BOFU brief", "GBP optimization", "local SEO flow". Near-miss routing: full diagnostic audit with health score to gestel-seo-audit; scaled templated pages to gestel-programmatic-seo; broader content/topic plan to gestel-content-strategy; blog-only FLOW to gestel-blog-flow. Local, no-credential scope: excludes tasks needing hidden credentials, paid providers, live account mutation, or missing upstream sync/runtime scripts.'
 license: MIT
-metadata:
-  version: 2.0.0
 ---
 
 # SEO FLOW: Evidence-Led Find / Leverage / Optimize / Win / Local

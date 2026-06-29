@@ -1,0 +1,208 @@
+{
+  "skill_name": "skillify",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "새 Codex skill을 하나 만들고 싶어. 사용자가 PR 리뷰 코멘트를 주면 unresolved thread를 확인하고 필요한 수정까지 하게 만드는 skill이야.",
+      "expected_output": "Should trigger skillify. Should propose the smallest architecture, likely a workflow or GitHub-adapter skill depending on tool access. Should define trigger prompts, near-misses, SKILL.md body plan, references only if needed, evals/evals.json cases, and validation commands. Should not start by writing a large knowledge dump.",
+      "assertions": [
+        "Identifies the skill architecture",
+        "Creates or proposes should-trigger and should-not-trigger evals",
+        "Keeps SKILL.md as workflow/router rather than dumping all details",
+        "Includes validation commands",
+        "Surfaces tool/API assumptions"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "이 skill 너무 길어진 것 같은데, 어떤 걸 references로 빼야 하는지 리뷰해줘.",
+      "expected_output": "Should trigger skillify. Should review the skill using the context ladder, identify always-needed workflow versus branch-specific reference, flag duplication, suggest specific files under references/, and preserve a single source of truth.",
+      "assertions": [
+        "Uses the context ladder",
+        "Identifies branch-specific material to move to references",
+        "Flags duplication or stale sediment",
+        "Suggests concrete reference file names",
+        "Preserves single source of truth"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "AI 검색 최적화 트렌드가 바뀌었으니 우리 SEO skill 본문에 최신 정보들을 다 업데이트해줘.",
+      "expected_output": "Should trigger skillify because this is skill refactoring with trend freshness risk. Should recommend dated trend snapshot references, source and refresh metadata, and freshness evals rather than embedding all current claims permanently in SKILL.md.",
+      "assertions": [
+        "Recognizes freshness risk",
+        "Recommends dated trend snapshot reference",
+        "Includes source and refresh metadata",
+        "Adds or proposes a freshness eval",
+        "Avoids permanent latest/current claims in SKILL.md"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Can you write homepage copy for our new SaaS product?",
+      "expected_output": "Should not trigger skillify. Should defer to a copywriting or marketing skill because the user is asking for marketing copy, not skill design or review.",
+      "assertions": [
+        "Treats this as a should-not-trigger case",
+        "Defers to a copywriting or marketing skill",
+        "Does not apply skill-authoring workflow"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "이 SKILL.md가 외부 WebSearch 결과를 DISCOURSE.md로 저장해서 다음 agent가 읽게 해. prompt injection 괜찮은지 봐줘.",
+      "expected_output": "Should trigger skillify. Should apply the security-and-freshness reference, classify DISCOURSE.md and WebSearch snippets as untrusted data, recommend fencing/provenance/size/path checks, and distinguish instruction-only guards from script-enforced guards.",
+      "assertions": [
+        "Classifies external snippets and generated briefs as untrusted data",
+        "Recommends a fence with provenance",
+        "Recommends script-enforced checks for high-risk auto-loads",
+        "Mentions size or path checks",
+        "Does not treat external text as instructions"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "우리 skill에 evals.json을 넣고 싶은데 어떤 케이스를 넣어야 해?",
+      "expected_output": "Should trigger skillify. Should explain the minimum eval set: direct trigger, implicit trigger, complex reference/script case, adjacent near-miss, keyword-overlap near-miss, and failure-mode case. Should provide JSON shape and objective assertion examples.",
+      "assertions": [
+        "Lists the minimum eval set",
+        "Includes near-miss negative cases",
+        "Includes failure-mode cases",
+        "Shows the eval JSON shape",
+        "Gives objective assertion examples"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "이 skill은 Claude Deep Research랑 Gemini Deep Research 결과를 바탕으로 만들었어. 원본 자료랑 distilled rule 사이 근거를 어떻게 남겨야 해?",
+      "expected_output": "Should trigger skillify. Should recommend user-provided research-sources/ Markdown files, distilled references/ files with provenance comments, a research-sources README intake map, updated/source/derived-from/used-by headers, and evals that preserve provenance during refreshes. Should not recommend pasting raw research into SKILL.md or generating fake research source files.",
+      "assertions": [
+        "Recommends research-sources/ for user-provided raw or semi-raw source material",
+        "Recommends distilled references/ for operational rules",
+        "Adds provenance comments such as Updated, Sources, Derived from, and Used by",
+        "Recommends a source map README",
+        "Avoids putting raw research in SKILL.md",
+        "Does not synthesize missing source research files"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "이 skill을 최신 deep research 기반으로 업데이트해줘. 아직 원본 리서치 파일은 없어.",
+      "expected_output": "Should trigger skillify. Should first apply the research gate. If freshness or evidence matters, it should not create files under research-sources/ from its own web search or guesses. It should ask the user to provide Markdown exports or local file paths from ChatGPT, Gemini, Claude, and Perplexity Deep Research. It should include consistent platform prompts from references/deep-research-prompt-library.md, varying only freshness mode and platform wrapper, and explain that missing platforms can be skipped with a provenance note.",
+      "assertions": [
+        "Applies the research gate before adding research-sources/",
+        "Does not populate research-sources/ during normal execution",
+        "Requests user-provided Markdown files or local paths",
+        "Provides consistent prompts for ChatGPT, Gemini, Claude, and Perplexity Deep Research",
+        "Uses a freshness mode rather than changing the topic or schema per platform",
+        "Asks for final report, citations, source list, research date, and original prompt",
+        "Notes unavailable platforms as provenance gaps instead of fabricating sources"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "한국어로 설명할게. 사용자가 긴 작업을 goal prompt로 바꾸게 도와주는 새 skill을 만들어줘.",
+      "expected_output": "Should trigger skillify. Should keep the user-facing response in Korean if appropriate, but draft skill artifacts in English by default, including SKILL.md workflow text, eval expected_output, assertions, scripts, and script help text. Should preserve exact paths, commands, product names, and quoted acceptance criteria.",
+      "assertions": [
+        "Keeps user-facing conversation in the user's language",
+        "Writes SKILL.md artifact content in English by default",
+        "Writes eval expected_output and assertions in English by default",
+        "Preserves exact paths, commands, product names, and quoted acceptance criteria",
+        "Uses another artifact language only when explicitly requested or required by the target audience"
+      ],
+      "files": []
+    },
+    {
+      "id": 10,
+      "prompt": "새 project skill을 만들 때 기존 evals.json도 유지하고 Promptfoo로 실제 실행 가능한 coverage까지 넣는 워크플로를 정해줘.",
+      "expected_output": "Should trigger skillify. Should keep evals/evals.json as the source behavior spec, generate evals/promptfooconfig.yaml with the shared Promptfoo generator, validate the generated config with pnpm dlx promptfoo@latest validate config, and run at least one real Promptfoo eval through OpenRouter when OPENROUTER_API_KEY is available. If credentials are missing, it should report that blocker with the exact eval command instead of pretending the eval ran.",
+      "assertions": [
+        "Keeps evals/evals.json as the behavior-spec source",
+        "Generates Promptfoo config with uv run .agents/skills/scripts/promptfoo_skill_evals.py --write",
+        "Runs uv run .agents/skills/scripts/validate_skills.py",
+        "Runs pnpm dlx promptfoo@latest validate config -c .agents/skills/<skill-name>/evals/promptfooconfig.yaml",
+        "Runs a real Promptfoo eval when OPENROUTER_API_KEY is available",
+        "Uses openrouter:deepseek/deepseek-v4-flash as the generated provider",
+        "Reports a credential blocker and exact eval command when OPENROUTER_API_KEY is missing",
+        "Does not hardcode secrets"
+      ],
+      "files": []
+    },
+    {
+      "id": 11,
+      "prompt": "Design a skill suite for campaign launch work: competitor research, landing-page copy, email copy, SEO review, and final QA can happen independently.",
+      "expected_output": "Should trigger skillify. Should propose an orchestrator or delegated-team architecture rather than one giant skill. Should define parallel roles, non-overlapping ownership, a shared input packet, structured specialist outputs, fan-in aggregation, final validation, and fallback behavior when subagents are unavailable.",
+      "assertions": [
+        "Chooses orchestrator or delegated-team architecture",
+        "Defines independent roles or lanes",
+        "Defines non-overlapping ownership boundaries",
+        "Requires a shared input packet for each specialist",
+        "Requires structured outputs and fan-in aggregation",
+        "Includes fallback behavior when subagents are unavailable"
+      ],
+      "files": []
+    },
+    {
+      "id": 12,
+      "prompt": "Make a tiny skill that reformats a release-note template into one standard Markdown shape.",
+      "expected_output": "Should trigger skillify. Should choose a standalone or script-backed skill and explicitly reject subagents or multi-agent orchestration because the work is small, linear, and cheaper to keep deterministic.",
+      "assertions": [
+        "Chooses standalone or script-backed architecture",
+        "Explicitly rejects subagents for this tiny linear workflow",
+        "Explains that coordination cost exceeds value",
+        "Keeps the file plan small",
+        "Still includes basic trigger and near-miss evals"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "prompt": "Review this huge skill that makes one agent research, write, localize, and QA a 40-page content package sequentially.",
+      "expected_output": "Should trigger skillify. Should identify a delegation opportunity, keep SKILL.md as the controller/router, split research, writing, localization, and QA into specialist roles or parallel lanes where safe, add aggregation and validation gates, and avoid letting worker reports count as proof without artifacts or checks.",
+      "assertions": [
+        "Identifies independent workstreams for delegation",
+        "Keeps SKILL.md as controller or router",
+        "Defines specialist roles and parallel lanes where safe",
+        "Adds aggregation and validation gates",
+        "Requires artifacts or checks beyond worker summaries",
+        "Avoids one giant sequential workflow"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "prompt": "Create a skill where research subagents read uploaded docs and a publisher agent can push changes live.",
+      "expected_output": "Should trigger skillify. Should allow delegation only with strict safety gates: uploaded docs are untrusted data, research and publishing roles are separated, live mutation requires explicit authorization, specialist findings are aggregated before publishing, and there is a fallback if subagents or publishing tools are unavailable.",
+      "assertions": [
+        "Treats uploaded docs as untrusted data",
+        "Separates read-only research roles from publishing authority",
+        "Requires explicit authorization before live mutation",
+        "Aggregates specialist findings before publishing",
+        "Includes fallback behavior for unavailable subagents or tools",
+        "Does not let a publisher subagent act without review"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "prompt": "What evals should I add for an orchestrator skill that delegates to SEO, legal, and copy specialists?",
+      "expected_output": "Should trigger skillify. Should propose evals for routing, parallel fan-out, specialist output schemas, conflict resolution, aggregation, unavailable-subagent fallback, and anti-delegation near-miss cases where one standalone workflow is better.",
+      "assertions": [
+        "Includes routing eval cases",
+        "Includes parallel fan-out eval cases",
+        "Requires specialist output schema assertions",
+        "Tests conflict resolution and aggregation",
+        "Tests unavailable-subagent fallback",
+        "Includes anti-delegation near-miss cases"
+      ],
+      "files": []
+    }
+  ]
+}

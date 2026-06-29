@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skillify"
+  short_description: "Write lean, eval-backed agent skills"
+  default_prompt: "Use $skillify to design or review a project-scoped agent skill with evals, references, and validation gates."

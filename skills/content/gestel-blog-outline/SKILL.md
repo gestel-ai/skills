@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-outline
 description: Use when planning a SERP-informed blog post outline — H2/H3 heading hierarchy, per-section word-count targets, FAQ slots, chart/image placement markers, internal-linking zones, and competitive content-gap notes. Skeleton structure only (lighter than a full content brief), built from user-provided context and stable editorial judgment. Triggers include "outline", "blog outline", "content outline", "structure blog", "plan sections", "article skeleton", "heading structure", "competitive outline", "plan article". Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Outline

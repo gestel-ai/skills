@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-persona
 description: Use when working on project-local blog persona tasks migrated into gestel-blog-persona, including creating, listing, showing, or applying a writing persona/brand voice/tone using the NNGroup 4-dimension tone framework and CMI brand-voice chart for planning, drafting, analysis, review, or recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Triggers include "persona", "voice", "tone", "writing style", "brand voice", "create persona", "use persona".
+license: MIT
 ---
 
 # Blog Persona

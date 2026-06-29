@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-cluster
 description: 'Use when planning a SERP-overlap topic cluster (hub-and-spoke content architecture) from a seed keyword or URL - expand a keyword universe, cluster keywords by shared Google top-10 results (not text similarity), classify intent, design pillar/spoke structure with an internal-link matrix, and emit cluster-plan.json plus a static cluster-map.html. Triggers include "topic cluster", "content cluster", "semantic clustering", "pillar page", "hub and spoke", "content architecture", "keyword grouping", "cluster plan", "cluster map". Near-miss (use other skills): a single post draft (writing), a technical-SEO audit (seo-audit), pages-at-scale templates (programmatic-seo). Planning and analysis run locally within this skill; per-post content creation, paid SERP providers, and any live-account mutation are out of scope and routed elsewhere. Scope excludes anything needing hidden credentials, paid providers, live account mutation, or missing upstream scripts.'
+license: MIT
 ---
 
 # SEO Cluster (SERP-Overlap Topic Cluster Planner)

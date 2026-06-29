@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-competitor-pages
 description: 'Use when building or improving SEO comparison and alternatives pages for competitive-intent search — X vs Y comparison pages, alternatives-to-X pages, best-[category]-tool roundups, feature-matrix tables, and the comparison schema (Product/SoftwareApplication/ItemList JSON-LD) and conversion layout that go with them. Triggers: "comparison page", "X vs Y", "alternatives page", "alternative to", "competitor comparison", "best [category] tools roundup", "feature matrix". Works from user-provided competitor facts (pricing, features, ratings, exports, screenshots) plus stable page-architecture, schema, and keyword methodology. Near-miss: this is the page/content/schema layer, NOT a live competitor scraper, rank tracker, or backlink tool — fetching fresh pricing/feature/SERP data routes to a crawl/SEO-data adapter or user research; NOT for technical/on-page audits or generic blog writing. Local scope; no credentials, paid adapters, live mutation, or upstream scripts.'
+license: MIT
 ---
 
 # SEO — Competitor Comparison & Alternatives Pages

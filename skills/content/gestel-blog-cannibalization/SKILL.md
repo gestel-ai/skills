@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-cannibalization
 description: Detect keyword cannibalization across a set of blog or content files the user provides — extract each post's primary keyword from title/H1/H2s, cluster posts targeting the same search intent, score severity, and recommend MERGE / DIFFERENTIATE / CANONICAL / NO ACTION. Use when the user mentions "cannibalization", "keyword overlap", "competing pages", "duplicate keywords", "pages cannibalize", or asks which posts compete for the same search term. Runs local-only on user-provided files; does not perform live SERP lookups, account writes, or paid-API calls.
+license: MIT
 ---
 
 # Blog Cannibalization — Keyword Overlap Detection

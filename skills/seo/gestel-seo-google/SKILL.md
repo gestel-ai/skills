@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-google
 description: 'Use when interpreting or planning around Google''s first-party SEO data surfaces — Search Console (Search Analytics clicks/impressions/CTR/position, URL Inspection indexation, Sitemaps), PageSpeed Insights + CrUX field Core Web Vitals, the Indexing API, GA4 organic traffic, plus NLP entity, Knowledge Graph, YouTube, and Keyword Planner side APIs. Triggers: "search console / GSC", "PageSpeed / Lighthouse", "CrUX / real CWV", "URL inspection / why isn''t this indexed", "GA4 organic", "indexing API", "LCP/INP/CLS". This is the analyst + payload-builder layer: it reads user-supplied GSC/PSI/GA4 exports and JSON, builds correct API requests, and interprets numbers with stable thresholds. Local scope; no credentials, paid adapters, live mutation, or upstream scripts — live pulls route to a Google adapter or user-pasted data. NOT for crawl-based on-page audits, schema writing, or backlink tools (route to gestel-seo-audit / gestel-blog-schema / gestel-seo-ahrefs).'
+license: MIT
 ---
 
 # SEO — Google First-Party Data

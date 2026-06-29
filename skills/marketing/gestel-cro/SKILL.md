@@ -1,6 +1,7 @@
 ---
 name: gestel-cro
 description: Use when the user wants to optimize, improve, or increase conversions on a marketing page or form — homepage, landing page, pricing, feature page, lead capture, contact, or demo-request form. Also use for "CRO," "conversion rate optimization," "this page isn't converting," "improve conversions," "low conversion rate," "form abandonment," "nobody's converting," or when the user shares a page/URL and asks for conversion feedback. Works from user-provided context (copy, screenshots, exports, analytics) and stable CRO judgment; does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts
+license: MIT
 ---
 
 <!-- Provenance: distilled from references/skills/marketingskills/skills/cro (SKILL.md, references/experiments.md, references/form.md). Upstream: marketingskills @ 8bfcdffb655f16e713940cd04fb08891899c47db. License: MIT. See references/provenance.md. -->

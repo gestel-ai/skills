@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-content-brief
 description: Use when the user wants a competitive SEO content brief or content outline for a specific page or keyword, including per-section word counts, competitor gap scoring, search-intent classification, keyword density and placement guidance, meta-tag specs, page-type templates (service, blog, category, landing, FAQ, location, about, homepage), information-gain requirements, E-E-A-T signals, and internal-linking architecture. Supports both new-page briefs and improve-existing-page briefs. Triggers include "content brief", "write a brief", "writing brief", "content outline", "blog brief", "service page brief", "brief for", "content plan", "outline for", "page outline". Works from user-provided context and stable SEO judgment; does not require hidden credentials, paid provider adapters, live account mutation, or upstream runtime scripts.
+license: MIT
 ---
 
 # SEO Content Brief Generator

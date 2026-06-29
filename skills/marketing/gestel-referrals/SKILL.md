@@ -1,6 +1,7 @@
 ---
 name: gestel-referrals
 description: Use when working on project-local referral, affiliate, ambassador, or word-of-mouth program tasks — designing a referral loop, choosing incentive structures, sizing rewards, recruiting affiliates, setting commission/cookie terms, drafting launch emails, or auditing/optimizing an existing program. Covers planning, drafting, analysis, review, and recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Referral & Affiliate Programs

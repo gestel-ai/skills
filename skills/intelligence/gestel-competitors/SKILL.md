@@ -1,6 +1,7 @@
 ---
 name: gestel-competitors
 description: Use when working on project-local competitor comparison and alternative pages for SEO and sales enablement, including planning, drafting, analysis, review, or recommendations. Triggers include 'alternative page,' 'vs page,' 'competitor comparison,' 'comparison page,' '[Product] vs [Product],' '[Product] alternative,' 'competitive landing pages,' 'how do we compare to X,' 'battle card,' or 'competitor teardown.' Covers four formats (singular alternative, plural alternatives, you vs competitor, competitor vs competitor). Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 metadata:
   version: 2.0.0
 ---

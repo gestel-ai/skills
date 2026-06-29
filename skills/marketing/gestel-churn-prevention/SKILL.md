@@ -1,6 +1,7 @@
 ---
 name: gestel-churn-prevention
 description: Use when working on project-local churn prevention and SaaS retention tasks — reducing voluntary or involuntary churn, designing cancel flows, exit surveys, and save offers, building churn risk/health scores, setting up dunning and failed-payment recovery, or planning win-back and proactive retention. Trigger on "churn," "cancel flow," "save offer," "dunning," "failed payment recovery," "win-back," "retention," "exit survey," "pause subscription," "involuntary churn," "people keep canceling," or "churn rate is too high." Planning, drafting, analysis, and review only — not live account mutation, paid retention/billing provider adapters, hidden credentials, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Churn Prevention

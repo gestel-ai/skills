@@ -1,6 +1,7 @@
 ---
 name: gestel-marketing-psychology
 description: 'Use when applying psychological principles, mental models, or behavioral science to marketing — understanding why people buy, influencing behavior ethically, pricing perception, persuasion, conversion, onboarding, or retention. Triggers include "psychology," "mental models," "cognitive bias," "persuasion," "behavioral science," "why people buy," "decision-making," "consumer behavior," "anchoring," "social proof," "scarcity," "loss aversion," "framing," or "nudge." Project-local: no hidden credentials, paid provider adapters, live account mutation, or upstream runtime scripts.'
+license: MIT
 ---
 
 # Marketing Psychology & Mental Models

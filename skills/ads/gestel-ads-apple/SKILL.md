@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-apple
 description: Use when auditing or planning Apple Ads (formerly Apple Search Ads / ASA) for a mobile iOS app from user-provided exports, screenshots, or pasted metrics — evaluating campaign structure (Brand/Category/Competitor), CPT/TTR/CVR bid health, Custom Product Pages (CPPs), Maximize Conversions / Target CPA bidding, AdAttributionKit and MMP attribution, budget pacing, TAP placement coverage, and goal-CPA benchmarks. Triggers include "Apple Ads", "Apple Search Ads", "ASA", "App Store ads", "Search Ads", "AdAttributionKit", "view-through attribution", "Custom Product Page", or advertising an iOS app. Analysis, scoring, and recommendations only — no hidden credentials, paid provider adapters, live account mutation, AdServices/MMP API access, or upstream runtime scripts; freshness-sensitive platform claims must be verified before being asserted.
+license: MIT
 ---
 
 # Apple Ads (Apple Search Ads / ASA) Deep Analysis

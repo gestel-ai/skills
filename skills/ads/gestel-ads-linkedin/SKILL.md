@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-linkedin
 description: 'Use when evaluating or improving a B2B LinkedIn Ads account from user-provided exports — running the 27-check health audit across technical setup (Insight Tag, CAPI), audience targeting, creative quality, Lead Gen Forms, and bidding/budget, plus Thought Leader Ads, ABM, and predictive-audience assessment. Triggers include LinkedIn Ads, B2B ads, sponsored content, Lead Gen Forms, Message/Conversation Ads, ABM ads, Thought Leader Ads, predictive audiences, LinkedIn Campaign Manager, or B2B paid review. Near-miss: for budget/bidding across all platforms use gestel-ads-budget, for post-click pages use gestel-ads-landing, for static-creative performance reads use gestel-ads-intelligence. Project-local and freshness-gated: no hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts.'
+license: MIT
 ---
 
 # LinkedIn Ads Deep Analysis (B2B)

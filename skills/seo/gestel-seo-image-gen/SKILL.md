@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-image-gen
 description: 'Use when working on project-local SEO image tasks migrated into gestel-seo-image-gen, including planning and spec''ing OG/social preview cards, blog hero images, product photos, schema (ImageObject) images, infographics, favicons, social squares, and Pinterest pins; acting as creative director to construct optimized 6-component generation prompts; mapping each SEO asset type to a domain mode, aspect ratio, and resolution; and producing the post-generation SEO package (alt text, file naming, WebP conversion, ImageObject schema, og:image/Twitter meta tags). Near-miss: for blog-article imagery framed around editorial flow use gestel-blog-image; for auditing existing on-page images route to seo-audit work. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts; actual pixel rendering routes to an image-generation adapter.'
+license: MIT
 ---
 
 # SEO Image Gen

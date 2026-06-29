@@ -1,6 +1,7 @@
 ---
 name: gestel-content-strategy
 description: Use when working on project-local content strategy tasks migrated into gestel-content-strategy, including deciding what content to create, what topics to cover, content pillars and topic clusters, editorial calendars, keyword mapping by buyer stage, and prioritizing content ideas. Triggers include "content strategy," "what should I write about," "content ideas," "blog strategy," "topic clusters," "content planning," "editorial calendar," "content roadmap," and "content pillars." For writing individual pieces use gestel-copywriting; for technical SEO use gestel-seo-audit; for scaled templated pages use gestel-programmatic-seo. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 metadata:
   version: 2.0.0
 ---

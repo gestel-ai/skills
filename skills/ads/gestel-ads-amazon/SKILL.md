@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-amazon
 description: 'Use when auditing or planning Amazon Ads from user-provided exports — Sponsored Products, Sponsored Brands (incl. SB Video), Sponsored Display (audiences + contextual), and basic Amazon DSP visibility. Triggers include Amazon Ads, Amazon advertising, Amazon PPC, Amazon search ads, Sponsored Products/Brands/Display, Amazon DSP, ACOS, TACOS, retail media audit, AMS, Brand Analytics, search-term harvesting, or Amazon seller/vendor advertising. Near-miss: generic ad-budget/bidding work is gestel-ads-budget; Meta/Instagram static-creative learning is gestel-ads-intelligence. Analysis, review, and planning only — no hidden credentials, no paid provider adapters, no live Amazon Advertising API mutation, and no dependence on missing upstream scripts.'
+license: MIT
 ---
 
 # Amazon Ads Deep Analysis

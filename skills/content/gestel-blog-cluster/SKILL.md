@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-cluster
 description: Use when planning or auditing a semantic topic cluster (hub-and-spoke content ecosystem) from a seed keyword - SERP-overlap keyword clustering, intent classification, pillar/spoke architecture, internal-link matrix design, cluster-plan JSON and a no-JavaScript SVG cluster map. Triggers include "blog cluster", "topic cluster", "content cluster", "cluster plan", "cluster map", "pillar content", "hub and spoke", "content ecosystem". Planning and analysis are local; the per-post writing/image/schema execution is routed to a separate writing capability, never invented here.
+license: MIT
 ---
 
 # Blog Cluster (Semantic Topic Cluster Engine)

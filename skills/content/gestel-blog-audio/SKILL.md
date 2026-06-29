@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-audio
 description: 'Use when working on project-local blog audio narration tasks migrated into gestel-blog-audio, including authoring the spoken-text script for a blog post in summary, full read-aloud, or two-speaker dialogue/podcast mode, selecting a Gemini TTS voice (or voice pair) by content type, choosing flash vs pro model, and producing ready-to-paste HTML5/MDX/WordPress audio embed code with a placement recommendation. Near-miss: this is text/script preparation and embed planning, not actual audio rendering — synthesizing the MP3 requires a paid TTS provider. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts; the actual text-to-speech render routes to a TTS adapter or user-supplied audio file.'
+license: MIT
 ---
 
 # Blog Audio

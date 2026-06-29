@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-sitemap
 description: Use when analyzing an existing XML sitemap or generating a new one — validating XML format, URL counts against the protocol limit, HTTP status, lastmod accuracy, deprecated priority/changefreq tags, robots.txt reference, and canonical/noindex/redirect hygiene, then emitting valid sitemap.xml (with a sitemap index when split is needed) plus a STRUCTURE.md, and applying scale quality-gates that flag thin programmatic pages before they become an indexing liability. Triggers include "sitemap", "generate sitemap", "XML sitemap", "sitemap issues", "sitemap index", "sitemap not indexed", "split sitemap", "Sitemap pruefen". Reasons over user-provided sitemap files, URLs, and crawl exports plus stable sitemap-protocol and SEO judgment; does not require hidden credentials, paid providers, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # SEO Sitemap Analysis & Generation

@@ -1,6 +1,7 @@
 ---
 name: gestel-paywalls
 description: Use when working on project-local paywall, upgrade-screen, upsell-modal, or feature-gate tasks — planning, drafting, reviewing, or recommending in-product upgrade moments where a free or trial user has already experienced value. Triggers include "paywall," "upgrade screen," "upsell," "feature gate," "convert free to paid," "freemium conversion," "trial expiration screen," "limit reached screen," or "free users won't upgrade." Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Distinct from public pricing-page CRO and from pricing-model decisions.
+license: MIT
 ---
 
 # Paywall and Upgrade Screen CRO

@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-bing
 description: 'Use when working on the non-Google indexing surface — getting pages into the Bing index for Microsoft Copilot citation eligibility, planning or troubleshooting IndexNow URL submission (Bing/Yandex/Seznam/Naver), or interpreting user-provided Bing Webmaster link, crawl, and keyword exports. Triggers include "IndexNow," "submit to Bing," "Bing index," "Bing Webmaster," "Copilot citations," "get indexed in Bing," "Yandex/Seznam/Naver indexing," "IndexNow key," "keyLocation," "why isn''t my page in Bing," or "Bing backlink data." Near-miss: NOT Google indexing/sitemaps (route to an SEO-Google task), NOT generic backlink confidence weighting (route to a backlinks task), NOT on-page/meta audits (route to gestel-seo / seo-audit). Planning, protocol, and interpretation methodology only — runs WITHOUT hidden credentials, paid provider adapters, live account mutation, or missing upstream scripts. Actual Bing Webmaster API reads and live IndexNow pings are Boundaries routed to the user or an adapter.'
+license: MIT
 ---
 
 # GESTEL SEO — Bing / IndexNow / Copilot Visibility

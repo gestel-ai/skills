@@ -1,6 +1,7 @@
 ---
 name: gestel-social
 description: Use when the user wants to create, plan, repurpose, schedule, or optimize social media content for LinkedIn, Twitter/X, Instagram, TikTok, Facebook, YouTube, or other platforms, or wants social listening and engagement triage. Triggers include "LinkedIn post," "Twitter thread," "social media," "content calendar," "social scheduling," "engagement," "viral content," "what should I post," "repurpose this content," "tweet ideas," "LinkedIn carousel," "social media strategy," "grow my following," "TikTok video," "Reels," "Shorts," "video script," "video hook," "short-form video," "social listening," "brand mentions," "competitor monitoring," "top posts to comment on," or "find people asking for." Stays within planning, drafting, analysis, review, and recommendations that do not require hidden credentials, paid provider adapters, browser automation, live account mutation, or missing upstream runtime scripts. For broader content strategy see gestel-content-strategy; for paid ads see gestel-ads.
+license: MIT
 ---
 
 # Social Content

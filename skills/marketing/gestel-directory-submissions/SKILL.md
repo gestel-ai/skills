@@ -1,6 +1,7 @@
 ---
 name: gestel-directory-submissions
 description: Use when the user wants to plan, draft, or review submitting a software product to startup, SaaS, AI, agent/MCP, no-code, review, or profile directories for backlinks, domain rating, and discovery. Triggers include "directory submissions," "submit to directories," "backlinks from directories," "list my product," "submit to Product Hunt," "BetaList," "TAAFT," "Futurepedia," "G2/Capterra listing," "AlternativeTo," "SaaSHub," "AI directories," "MCP registry," "agent directory," "dofollow backlinks," "launch directories," or "directory tracker." Excludes work that needs hidden credentials, paid provider adapters, live account creation/mutation, browser automation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Directory Submissions

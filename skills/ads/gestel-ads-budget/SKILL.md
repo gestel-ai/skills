@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-budget
 description: Use when working on project-local ads budget and bidding tasks in gestel-ads-budget — reviewing spend distribution, bidding-strategy appropriateness, scaling readiness, and kill/scale decisions across ad platforms (Google, Meta, LinkedIn, TikTok, Microsoft, Apple). Triggers include budget allocation, bidding strategy, ad spend, ROAS/CPA target, media budget, MER, or scaling. Planning, drafting, analysis, review, and recommendations only — no hidden credentials, paid provider adapters, live account mutation, or upstream runtime scripts.
+license: MIT
 ---
 
 # Ads Budget & Bidding Strategy

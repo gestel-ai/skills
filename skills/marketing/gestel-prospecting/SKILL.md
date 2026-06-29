@@ -1,6 +1,7 @@
 ---
 name: gestel-prospecting
 description: Use when the user wants to find, qualify, and build a list of prospects to reach out to — across B2B SaaS, general B2B, or local small businesses. Triggers include "build a prospect list," "find prospects/leads," "lead gen list," "find SaaS/B2B companies that," "find local businesses," "businesses without websites," "ICP-fit accounts," "who should we go after," "outbound/target account list," "find clients near me," or "qualified leads." This is the list-building and qualification phase, done from user-provided context and stable judgment — it does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts
+license: MIT
 ---
 
 <!-- Provenance: distilled from marketingskills/skills/prospecting (MIT, commit 8bfcdffb655f16e713940cd04fb08891899c47db). -->

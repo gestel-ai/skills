@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-landing
 description: 'Use when assessing or improving the post-click landing page experience for paid ad campaigns — message match, page speed, mobile experience, trust signals, form optimization, consent-banner impact, and conversion-rate potential. Triggers include landing page audit, LP audit, post-click experience, post-click CRO, landing page CRO, landing page optimization, or ad-to-page conversion review. Project-local: no hidden credentials, paid provider adapters, live account mutation, or upstream runtime scripts.'
+license: MIT
 ---
 
 # Ads Landing Page Quality

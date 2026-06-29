@@ -1,6 +1,7 @@
 ---
 name: gestel-sales-enablement
 description: Use when the user wants to create or improve B2B sales collateral — pitch/sales decks, one-pagers and leave-behinds, objection-handling docs, ROI/value-prop calculators, demo scripts and talk tracks, case-study briefs, proposal templates, sales playbooks, or buyer-persona cards. Triggers include "sales deck," "pitch deck," "one-pager," "leave-behind," "objection handling," "deal ROI," "demo script," "talk track," "sales playbook," "proposal template," "buyer persona card," "help my sales team," or "what should I give my reps." Scope is project-local planning, drafting, review, and recommendation work; it does not require hidden credentials, paid provider adapters, live CRM/account mutation, partner-tool registries, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Sales Enablement

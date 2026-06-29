@@ -1,6 +1,7 @@
 ---
 name: gestel-marketing-ideas
 description: Use when working on project-local marketing ideas tasks migrated into gestel-marketing-ideas, including when the user needs marketing ideas, growth ideas, inspiration, or strategies for a SaaS or software product; says "marketing ideas," "growth ideas," "how to market," "marketing tactics," "ways to promote," "brainstorm marketing," "I don't know how to market this," or "what marketing should I do"; or is stuck and looking for a starting point. For specific channel execution route to the relevant adapter (ads, social, emails, SEO). Stays within planning, drafting, analysis, review, and recommendation work that does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 metadata:
   version: 2.0.0
 ---

@@ -1,6 +1,7 @@
 ---
 name: gestel-public-relations
 description: Use when working on project-local public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Triggers include 'PR,' 'public relations,' 'press release,' 'press coverage,' 'media outreach,' 'pitch a journalist,' 'get featured,' 'media list,' 'press kit,' 'newsjacking,' 'HARO,' 'Qwoted,' 'Featured,' 'reporter request,' 'earned media,' 'op-ed,' 'guest article,' or 'how do I get press.' Covers planning, drafting, scoring, review, and recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Public Relations & Earned Media

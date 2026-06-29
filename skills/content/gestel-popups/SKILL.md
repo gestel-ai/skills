@@ -1,6 +1,7 @@
 ---
 name: gestel-popups
 description: Use when the user wants to create or optimize popups, modals, overlays, slide-ins, or banners for conversion — including "exit intent," "popup conversions," "modal optimization," "lead capture popup," "email popup," "announcement banner," "overlay," "collect emails with a popup," "scroll trigger," "sticky bar," or "notification bar." Covers planning, copy, trigger/targeting/frequency strategy, design and accessibility review, and A/B test design that work from user-provided context. Not for live deployment, popup-tool account writes, paid providers, hidden credentials, or upstream runtime scripts.
+license: MIT
 ---
 
 # Popup CRO

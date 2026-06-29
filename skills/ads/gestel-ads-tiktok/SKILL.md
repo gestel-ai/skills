@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-tiktok
 description: 'Use when reviewing or planning TikTok Ads / TikTok Shop creative and account structure for GESTEL — In-Feed and Spark Ads, Smart+ campaigns, 9:16 safe-zone compliance, creative diversity for retrieval, hook quality, ttclid/Events API tracking design, bidding and learning-phase sizing, and a weighted TikTok Health Score from user-supplied exports. Near-miss: for Meta/Instagram static performance reads use gestel-ads-intelligence; for budget math across channels use gestel-ads-budget; for cross-channel creative production use gestel-creative-package. Scope is read-and-recommend on data the user provides — it needs NO hidden credentials, NO paid creative/AI provider, NO live TikTok account mutation, and NO missing upstream scripts; freshness-sensitive platform facts are flagged, not asserted as current.'
+license: MIT
 ---
 
 # GESTEL Ads TikTok

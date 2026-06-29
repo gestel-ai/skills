@@ -1,6 +1,7 @@
 ---
 name: gestel-revops
 description: Use when working on project-local revops tasks migrated into gestel-revops, including planning, drafting, analysis, review, or recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Covers revenue operations, lead lifecycle and MQL/SQL definitions, lead scoring models, lead routing and speed-to-lead, pipeline stage management, CRM automation design, deal desk approvals, data hygiene, and RevOps metrics. Also use when the user mentions "RevOps," "lead scoring," "lead routing," "MQL," "SQL," "pipeline stages," "deal desk," "CRM automation," "marketing-to-sales handoff," "data hygiene," "leads aren't getting to sales," or "when should marketing hand off to sales."
+license: MIT
 ---
 
 # RevOps

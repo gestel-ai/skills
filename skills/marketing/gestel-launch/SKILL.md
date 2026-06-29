@@ -1,6 +1,7 @@
 ---
 name: gestel-launch
 description: Use when the user wants to plan a product launch, feature announcement, or go-to-market/release strategy. Also use on mentions of "launch," "Product Hunt," "feature release," "announcement," "GTM plan," "beta launch," "early access," "waitlist," "product update," "launch checklist," or "we're about to ship." Covers planning, drafting, sequencing, and review that can be done from user-provided context and stable marketing judgment, without hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Launch Strategy

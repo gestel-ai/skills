@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-math
 description: Use for project-local PPC financial math and modeling from pasted or user-provided data — CPA, ROAS, CPL, CPC, CPM, CTR, CVR, break-even CPA/ROAS, impression-share opportunity sizing, budget forecasting, LTV:CAC ratio, and MER (Marketing Efficiency Ratio). Triggers include "PPC math", "ad calculator", "ROAS calculator", "CPA calculator", "break-even", "budget forecast", "impression share", "LTV CAC", "MER". Requires zero API access and works entirely from exports the user pastes. Not for live account mutation, paid provider adapters, hidden credentials, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Ads Math (PPC Financial Calculator & Modeling)

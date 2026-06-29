@@ -1,6 +1,7 @@
 ---
 name: gestel-copywriting
 description: Use when working on project-local copywriting tasks migrated into gestel-copywriting — writing, rewriting, or improving marketing copy for any page (homepage, landing page, pricing, feature, about, product). Triggers include "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," "CTA copy," "value proposition," "tagline," "subheadline," "hero section copy," "above the fold," "this copy is weak," or "make this more compelling." Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. For editing existing copy line-by-line, route to a copy-editing task; for email or popup copy, route to the matching skill.
+license: MIT
 ---
 
 # Copywriting

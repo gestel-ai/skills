@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-taxonomy
 description: Use when working on blog taxonomy in this project — extracting and suggesting tags/categories from post content, semantic grouping and ranking of candidates, and auditing a taxonomy for thin or orphan tags, tag bloat, or excessive category depth. Triggers include "tags", "categories", "taxonomy", "tag suggestions", "audit tags", "thin tags", "WordPress/Shopify/Ghost/Strapi/Sanity tags". Operates on user-provided content and exports; routes live CMS sync that needs credentials to an adapter/implementation task instead of mutating accounts.
+license: MIT
 ---
 
 # Blog Taxonomy

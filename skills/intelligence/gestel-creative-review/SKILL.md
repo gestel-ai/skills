@@ -1,6 +1,7 @@
 ---
 name: gestel-creative-review
 description: Use when reviewing whether a generated GESTEL static ad variant can be marked launch-ready, especially for Product Fidelity, Claim and Price Evidence, Meta or Instagram Platform Fit, Korean commerce copy, failure type, credit policy, or regeneration decisions.
+license: MIT
 ---
 
 # GESTEL Creative Review

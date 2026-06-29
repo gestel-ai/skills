@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-page
 description: 'Use when the user hands over ONE page/URL (or one block of pasted HTML) for a deep single-page SEO review covering on-page elements, content quality, technical meta tags, schema/structured-data, images, and Core-Web-Vitals risk signals, returning a per-page score card, prioritized issues, and ready-to-use JSON-LD suggestions. Triggers: "analyze this page," "check page SEO," "single URL," "review this page," "is this page optimized," "score this URL." Near-miss routing (do NOT use): whole-site/multi-page audits or crawls (gestel-seo-audit), structured-data build (gestel-blog-schema), writing or rewriting copy (gestel-copywriting / gestel-blog-write), conversion-rate optimization (gestel-cro), keyword/topic planning (gestel-content-strategy), per-post blog publishing checks (gestel-blog-seo-check). Works locally from a URL or pasted HTML plus stable SEO judgment; needs no credentials, paid adapters, live account mutation, or upstream runtime scripts.'
+license: MIT
 metadata:
   version: 2.0.0
 ---

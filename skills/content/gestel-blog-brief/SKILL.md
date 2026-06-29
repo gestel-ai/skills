@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-brief
 description: Use when the user wants a blog content brief, blog outline, or content plan, including target keywords, content template recommendation, competitive analysis, recommended statistics, TL;DR and citation-capsule planning, information-gain prompts, internal-linking architecture, and a multi-channel distribution plan optimized for Google rankings and AI citations (GEO/AEO). Triggers include "content brief", "blog brief", "write brief", "outline blog", "plan blog post", "blog outline", "content outline". Works from user-provided context and stable editorial judgment; does not require hidden credentials, paid provider adapters, live account mutation, or upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Brief Generator

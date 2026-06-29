@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-google
 description: 'Use to interpret Google performance data for blog SEO — PageSpeed/Lighthouse + CrUX Core Web Vitals (LCP/INP/CLS) and 25–40 week CWV trends, Search Console clicks/impressions/CTR/position with quick-win detection, URL Inspection indexation status, GA4 organic traffic, NLP entity/salience reads for E-E-A-T, YouTube video discovery for embedding, and Keyword Planner volume buckets. Triggers include "google data", "page speed", "core web vitals", "CWV", "search console data", "indexation status", "GA4 organic", "nlp entities", "blog performance", "youtube search", "keyword volume". Works on data the user pastes/exports or that an authenticated Google adapter returns; no hidden credentials, paid provider keys, live account mutation, or missing upstream runtime scripts. Near-miss: making the actual API/OAuth call, mutating Search Console/Indexing/GA4, or running provider scripts route out per Boundaries; full-site file audits go to gestel-blog-audit; keyword-cluster strategy goes to gestel-blog-cluster.'
+license: MIT
 ---
 
 # Blog Google: Interpreting Google Performance Data for Blogs

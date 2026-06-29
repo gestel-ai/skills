@@ -1,6 +1,7 @@
 ---
 name: gestel-programmatic-seo
 description: 'Use when the user wants a strategy for creating SEO-driven pages at scale from templates plus data — picking a page-pattern playbook (locations, comparisons, integrations, directory, glossary), validating the keyword pattern and demand, designing a template that yields genuinely unique pages, and planning internal linking, indexation, and thin-content gating. Triggers: "programmatic SEO", "pSEO", "pages at scale", "[keyword]+[city] pages", "comparison pages", "integration pages", "directory pages", "generate 100 pages", casual phrasings ("a page for each of our 50 integrations"), and "why won''t Google index our programmatic pages". Near-miss (do NOT use): auditing ONE existing page (gestel-seo-page) or whole site (gestel-seo-audit); the engineering variant (gestel-seo-programmatic). Local scope; no credentials/paid adapters/live mutation/upstream scripts — runs on user context and routes freshness-sensitive policy/penalty/platform facts to dated research.'
+license: MIT
 metadata:
   version: 2.0.0
 ---

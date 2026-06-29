@@ -1,6 +1,7 @@
 ---
 name: gestel-ads
 description: Use when running or orchestrating a multi-platform paid-ads audit, health score, or strategic ad plan across Google, Meta, YouTube, LinkedIn, TikTok, or Microsoft from user-provided account data — context intake, the 10-principle thinking gate, industry detection, per-platform audit checklists, compliance and privacy quality gates, weighted scoring/grading, and prioritized action plans. Triggers include "audit my ads", "ad account review", "ads health score", "ad strategy plan", "why is my CPA so high", "review my Google/Meta/TikTok account". Routes budget/bidding to gestel-ads-budget, PPC math to gestel-ads-math, landing pages to gestel-ads-landing, and static-creative learnings to gestel-ads-intelligence. Project-local and advisory only — no hidden credentials, paid image providers, live account mutation, parallel-subagent dispatch, PDF/report scripts, or upstream runtime scripts.
+license: MIT
 ---
 
 # Ads: Multi-Platform Audit & Strategic Orchestration

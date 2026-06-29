@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-audit
 description: Use for full-site blog health audits over local content files — scoring every post, finding orphan/dead-end pages, topic cannibalization, stale content, and AI-citation readiness, then emitting a prioritized action queue. Triggers include "audit blog", "blog audit", "site audit", "blog health", "audit all posts", "check all blogs". Works from project files only; no credentials, paid providers, live rank/crawl data, or upstream runtime scripts.
+license: MIT
 ---
 
 # Blog Audit: Full-Site Health Assessment

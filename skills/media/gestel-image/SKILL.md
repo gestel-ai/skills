@@ -1,6 +1,7 @@
 ---
 name: gestel-image
 description: Use when working on project-local marketing/editorial image tasks — planning, choosing a generation approach, writing AI image prompts, picking platform dimensions, OG/social preview specs, and image optimization. Covers blog heroes, social graphics, product mockups, profile/listing banners, brand assets, and WebP/AVIF compression. Use for "generate an image," "create a graphic," "hero image," "product mockup," "social media graphic," "banner," "OG image," "compress images," "WebP," or named models like Flux, Gemini/Nano Banana, Ideogram, GPT Image, Midjourney, Recraft, Stable Diffusion, Canva, Figma. Excludes paid ad creative (route to an ad-creative adapter) and live image generation against paid provider APIs (route to an implementation task with credentials).
+license: MIT
 ---
 
 # Image

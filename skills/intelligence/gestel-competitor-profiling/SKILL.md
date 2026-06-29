@@ -1,6 +1,7 @@
 ---
 name: gestel-competitor-profiling
 description: Use when the user wants to research, profile, or analyze competitors from URLs, exports, or notes — including "competitor profile", "competitor research/analysis", "profile this competitor", "competitive intelligence", "competitor deep dive", "competitor landscape", "competitor dossier", or "competitive audit". Produces structured, comparable competitor profile markdown. Works from user-provided context and stable analytic judgment; does NOT assume hidden credentials, paid scraping/SEO providers, browser automation, live account mutation, or missing upstream runtime scripts (route those steps to an adapter, Deep Research, or implementation task).
+license: MIT
 ---
 
 # Competitor Profiling

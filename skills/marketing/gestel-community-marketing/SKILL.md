@@ -1,6 +1,7 @@
 ---
 name: gestel-community-marketing
 description: Use when working on project-local community marketing and community-led growth — community strategy, growing a Discord/Slack/Circle/Reddit/forum community, new-member onboarding, community rituals, brand ambassador/advocate programs, community-led support, word-of-mouth, or community health audits. Trigger phrases include "build a community," "community strategy," "Discord/Slack community," "community-led growth," "brand advocates," "ambassador program," "community engagement," "grow our community," and "community flywheel." Covers planning, drafting, analysis, review, and recommendations that do NOT require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Community Marketing

@@ -1,6 +1,7 @@
 ---
 name: goalify
 description: Use when the user wants to turn an intent, task, plan, issue, investigation, refactor, backlog slice, or continuation request into a copy-pastable `/goal` prompt or Goal objective for long-running agent work.
+license: MIT
 ---
 
 # Goalify

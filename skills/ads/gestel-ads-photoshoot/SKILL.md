@@ -1,6 +1,7 @@
 ---
 name: gestel-ads-photoshoot
 description: 'Use when turning a product image or description into a ready-to-generate product-photography prompt pack for ad creative — five styles (Studio, Floating, Ingredient, In Use, Lifestyle) at correct platform sizes, with brand-DNA injection, treatment hints, and 9:16 safe-zone framing. Triggers on "product photo," "product photography," "photoshoot," "enhance product image," "product shoot," "studio shot," "floating product," "ingredient flat lay," "lifestyle photo," "product shots for ads." Near-miss routing: general (non-product, non-ad) image work or model selection goes to gestel-image; full ad copy plus creative assembly goes to gestel-creative-package; performance read-back of shipped creative goes to gestel-ads-intelligence. Scope is the prompt/brief only — no hidden credentials, paid provider keys, live account mutation, or missing upstream generation scripts are required; actual pixel generation routes to a provider adapter or the user''s own tool.'
+license: MIT
 ---
 
 # GESTEL Ads Photoshoot

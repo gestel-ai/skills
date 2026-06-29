@@ -1,6 +1,7 @@
 ---
 name: gestel-onboarding
 description: Use when working on post-signup onboarding, user activation, first-run experience, or time-to-value for a product. Triggers include "onboarding flow," "activation rate," "user activation," "first-run experience," "empty states," "onboarding checklist," "aha moment," "new user experience," "users aren't activating," "nobody completes setup," "low activation rate," "users sign up but don't use the product," "time to value," or "first session experience." Use this whenever users sign up but do not stick around. Scope is planning, drafting, auditing, and recommending; it does not require hidden credentials, paid analytics adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Onboarding CRO

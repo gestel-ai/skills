@@ -1,6 +1,7 @@
 ---
 name: gestel-seo-firecrawl
 description: 'Use when planning or interpreting a full-site crawl, site map, JS-rendered page scrape, or site-scoped search for SEO — e.g. "crawl this site", "map the site", "find all pages", "discover URLs", "orphan pages", "broken links", "site structure", "render the JS / SPA pages", "scrape this dynamic page", or any site-wide content inventory feeding an audit. Designs the crawl plan (scope, depth, include/exclude paths, formats, credit budget), then interprets the returned crawl/map/scrape/search data into SEO findings and routes results to the right audit subskill. Near-miss: this is crawl strategy + result interpretation, not the live crawl itself — executing the crawl needs the paid Firecrawl provider, which is out of scope here. Does not require hidden credentials, paid provider adapters, live account mutation, or missing upstream install scripts; the actual fetch routes to a Firecrawl adapter/MCP or to a user-supplied crawl export.'
+license: MIT
 ---
 
 # SEO Firecrawl (Crawl Planning & Interpretation)

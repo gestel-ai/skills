@@ -1,6 +1,7 @@
 ---
 name: gestel-offers
 description: Use when working on project-local offers tasks migrated into gestel-offers — designing, constructing, or improving the thing the user actually sells, including value framing, bonus stacking, guarantee design, scarcity/urgency, naming, and payment structure. Also use when the user mentions "offer," "offer design," "build an offer," "grand slam offer," "irresistible offer," "value stack," "bonus stack," "guarantee," "risk reversal," "money-back guarantee," "scarcity," "urgency," "high-ticket offer," "productize a service," "naming an offer," "payment plan," "down-sell," "upsell offer," or "why isn't my offer converting." Best for services, agencies, courses, coaching, info products, high-ticket B2B, and direct-response. Stays within planning, drafting, analysis, review, and recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts.
+license: MIT
 ---
 
 # Offer Design

@@ -1,6 +1,7 @@
 ---
 name: gestel-copy-editing
 description: Use when working on project-local copy editing tasks migrated into gestel-copy-editing, including planning, drafting, analysis, review, or recommendations that do not require hidden credentials, paid provider adapters, live account mutation, or missing upstream runtime scripts. Triggers include 'edit this copy,' 'review my copy,' 'copy feedback,' 'proofread,' 'polish this,' 'make this better,' 'copy sweep,' 'tighten this up,' 'this reads awkwardly,' 'too wordy,' 'sharpen the messaging,' 'refresh this content,' 'update this page,' 'this content is outdated,' or 'content audit.' Use when the user already has copy and wants it improved or refreshed rather than rewritten from scratch.
+license: MIT
 ---
 
 # Copy Editing

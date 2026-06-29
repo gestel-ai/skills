@@ -1,6 +1,7 @@
 ---
 name: gestel-blog-discourse
 description: 'Use when the user wants to research what real people are saying right now about a topic across public discourse platforms (Reddit, Hacker News, X/Twitter, YouTube, dev.to, Medium, GitHub, StackOverflow, Substack), and turn it into a structured discourse brief (DISCOURSE.md) for a blog post, trend piece, news analysis, or "state of X" article. Triggers: "blog discourse", "discourse research", "what are people saying about", "voice of customer", "social listening", "30-day/90-day research", "trend research", "real-time research", "practitioner discourse". Adds a recency-and-engagement lens complementing authority-source research; not needed for evergreen explainers. API-free: live web search with platform site operators plus recency filters and editorial judgment. Local, no-credential scope: no hidden API keys (Reddit/X/YouTube), paid platform-API providers, account mutation, or upstream runtime scripts; clustering/scoring/validation done by hand or routed to an implementation task.'
+license: MIT
 ---
 
 # Blog Discourse: Real Discourse Research, API-Free

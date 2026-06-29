@@ -1,6 +1,7 @@
 ---
 name: gestel-free-tools
 description: Use when the user wants to plan, evaluate, scope, or recommend a free marketing tool (engineering as marketing) for lead generation, SEO, or brand awareness — calculators, generators, analyzers/auditors, testers, libraries, or interactive tools. Triggers include "free tool," "marketing tool," "engineering as marketing," "ROI calculator," "grader/audit tool," "generator," "lead gen tool," "should I build a free tool," or "free resource for leads." Covers strategy, ideation, lead-capture design, MVP scoping, and a build/buy decision — not live keyword data, account writes, or actually coding the tool. For downloadable lead magnets (ebooks, checklists, templates) route to a lead-magnet task instead.
+license: MIT
 ---
 
 # Free Tool Strategy (Engineering as Marketing)

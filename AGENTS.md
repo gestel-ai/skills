@@ -7,11 +7,16 @@ This file gives coding agents guidance when working in this repository.
 This is the public GESTEL skill repository at
 `https://github.com/gestel-ai/skills`.
 
-It follows the Vercel Labs `skills` CLI layout and must remain installable with:
+It is a library of 118 self-contained marketing skills organized into 8
+categories. It follows the Vercel Labs `skills` CLI layout and must remain
+discoverable with:
 
 ```bash
-npx skills add https://github.com/gestel-ai/skills --skill product-engineering
+npx skills add https://github.com/gestel-ai/skills --list
 ```
+
+Individual skills are installed or used by name, e.g.
+`--skill gestel-ads`.
 
 ## Current Structure
 
@@ -20,15 +25,34 @@ AGENTS.md
 CLAUDE.md
 .claude-plugin/
   plugin.json
-skills/
-  product-engineering/
-    SKILL.md
 skills.sh.json
+scripts/
+  validate_skills.py
+  promptfoo_skill_evals.py
+skills/
+  <category>/
+    gestel-<skill>/
+      SKILL.md
+      references/*.md
+      evals/{evals.json,promptfooconfig.yaml}
 ```
 
-Keep both discovery paths working:
+Categories and skill counts (118 total):
 
-- Conventional skill discovery: `skills/product-engineering/SKILL.md`
+| Category | Skills | Focus |
+| --- | --- | --- |
+| ads | 15 | Paid advertising audits, planning, and platform-specific ad workflows. |
+| brand | 1 | Brand voice, positioning, and durable marketing context. |
+| content | 39 | Blog, copywriting, and multi-channel content production. |
+| intelligence | 5 | Competitor, customer, and creative intelligence for growth decisions. |
+| marketing | 19 | Growth, lifecycle, pricing, launch, and go-to-market workflows. |
+| media | 2 | Image and short-form video generation planning. |
+| reporting | 2 | Performance math, RevOps, and measurement. |
+| seo | 35 | Search and AI-search optimization across the SEO lifecycle. |
+
+Keep all three discovery/guidance paths working:
+
+- Conventional skill discovery: `skills/<category>/gestel-<skill>/SKILL.md`
 - Plugin manifest discovery: `.claude-plugin/plugin.json`
 - Claude Code guidance: `CLAUDE.md` imports `@AGENTS.md`
 
@@ -38,32 +62,35 @@ Keep both discovery paths working:
 - The plugin manifest name is `GESTEL`.
 - `AGENTS.md` is the canonical agent guidance file.
 - `CLAUDE.md` should stay as a thin `@AGENTS.md` import wrapper.
-- The public skill identifier is `product-engineering`.
-- The skill directory is `skills/product-engineering/`.
-- The `SKILL.md` frontmatter `name` is `product-engineering`.
-- Do not reintroduce `gestel-product-engineering` unless the public install
-  name is intentionally changed.
+- Skill identifiers are lowercase kebab-case with a `gestel-` prefix
+  (e.g. `gestel-ads`, `gestel-blog-audit`).
+- A skill lives at `skills/<category>/<name>/` and its `SKILL.md` frontmatter
+  `name` matches the directory name exactly.
 
-When renaming a skill, update all of these together:
+When adding or renaming a skill, update all of these together:
 
-- skill directory
+- skill directory under the correct `skills/<category>/`
 - `SKILL.md` frontmatter `name`
-- `.claude-plugin/plugin.json`
-- `skills.sh.json`
-- README install and validation examples
-- `.github/workflows/validate-skills.yml`
+- `.claude-plugin/plugin.json` (the `./skills/<category>/<name>` path)
+- `skills.sh.json` (the category grouping)
+- `.github/workflows/validate-skills.yml` if it references the skill by name
 
 ## Skill Authoring Rules
 
-- Keep `SKILL.md` concise and procedural.
-- Put detailed optional material in `references/`, scripts in `scripts/`, and
-  reusable output assets in `assets/` only when they are actually needed.
-- Keep reference files linked directly from `SKILL.md`; avoid deep reference
-  chains.
-- Do not add extra docs inside a skill folder unless they directly support skill
-  execution.
+- Each skill must be **self-contained**: it ships its own `references/*.md` and
+  `evals/`, and must run even if the top-level `reference/` directory (an
+  untracked upstream clone, gitignored) is deleted.
+- Do not reference `references/skills/` or `references/source-repos/` as a
+  runtime dependency in `SKILL.md` body; provenance/source notices only.
+- Keep `SKILL.md` concise and procedural; put detailed optional material in
+  `references/` and avoid deep reference chains.
 - Keep machine identifiers lowercase kebab-case.
 - Keep human-facing headings and group titles consistent with the GESTEL brand.
+- `SKILL.md` frontmatter must parse for the skills loader: line 1 is `---`;
+  `description` ≤1024 chars with no angle brackets (`<>`) and no unquoted
+  colon immediately followed by a space; only allowed keys (`name`,
+  `description`, `allowed-tools`, `license`,
+  `metadata`).
 
 ## Validation
 
@@ -72,29 +99,39 @@ Run these checks before claiming the repo is ready:
 ```bash
 test "$(cat CLAUDE.md)" = "@AGENTS.md"
 
+# Plugin manifest: name is GESTEL and every skill path resolves to a SKILL.md
 node - <<'NODE'
 const fs = require('fs');
 const path = require('path');
 const manifest = JSON.parse(fs.readFileSync('.claude-plugin/plugin.json', 'utf8'));
 if (manifest.name !== 'GESTEL') throw new Error('plugin manifest name must be GESTEL');
+let bad = 0;
 for (const skillPath of manifest.skills || []) {
   if (!skillPath.startsWith('./')) throw new Error(`skill path must start with ./, got ${skillPath}`);
-  const skillFile = path.join(skillPath, 'SKILL.md');
-  if (!fs.existsSync(skillFile)) throw new Error(`missing ${skillFile}`);
+  if (!fs.existsSync(path.join(skillPath, 'SKILL.md'))) { console.log('MISSING', skillPath); bad++; }
 }
+console.log(bad ? `FAIL ${bad}` : `OK ${manifest.skills.length}`);
 NODE
 
+# Markdown lint (expect 0 errors)
+pnpm dlx markdownlint-cli2 'skills/**/*.md'
+
+# Promptfoo eval configs are current
+uv run scripts/promptfoo_skill_evals.py --check
+
+# Self-containment: no non-provenance runtime deps on the upstream clone (expect 0)
+grep -rn "references/skills/\|references/source-repos/" skills/**/SKILL.md \
+  | grep -viE "distill|provenance|source path|upstream|notice|commit|licen|merged|narrowed|source map" \
+  | wc -l
+
+# Discoverable by the Vercel Labs skills CLI
 npx --yes skills add . --list
-npx --yes skills use . --skill product-engineering >/tmp/product-engineering.txt
-curl -fsSL https://skills.sh/schemas/skills.sh.schema.json -o /tmp/skills.sh.schema.json
-npx --yes ajv-cli@latest validate --spec=draft2020 --strict=false -s /tmp/skills.sh.schema.json -d skills.sh.json
 ```
 
-Before pushing, also verify old naming did not return outside this guidance
-file:
+Before pushing, verify old naming did not return outside this guidance file:
 
 ```bash
-! rg -n "Gestel|gestel-product-engineering|GESTEL-skills" README.md skills.sh.json .claude-plugin .github skills
+! rg -n "Gestel|product-engineering|GESTEL-skills" README.md skills.sh.json .claude-plugin .github skills
 ```
 
 After pushing, verify the remote repository too:

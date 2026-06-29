@@ -2,8 +2,6 @@
 name: gestel-aso
 description: 'Use when auditing or optimizing an App Store (Apple) or Google Play listing in gestel-aso — scoring metadata, visuals, ratings, and freshness, then producing a prioritized, brand-tier-aware action plan. Triggers: "ASO audit," "app store optimization," "optimize my app listing," "improve app visibility," "app store ranking," "why aren''t people downloading my app," "keyword optimization for app," "compare my app to competitors," or an apps.apple.com / play.google.com URL. Near-miss (do NOT use): web landing pages that drive installs (gestel-cro), App Store/Play ad creatives (gestel-ads-apple / gestel-ads-generate), writing listing copy from scratch with no audit (gestel-copywriting), web SEO planning (gestel-content-strategy / gestel-seo-audit). Works from user URLs, pasted fields, and screenshots; runs locally with no hidden credentials, paid ASO providers (AppTweak/Sensor Tower/MobileAction), live App Store Connect/Play Console mutation, or upstream scrape scripts.'
 license: MIT
-metadata:
-  version: 2.0.0
 ---
 
 # ASO Audit

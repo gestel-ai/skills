@@ -1,8 +1,6 @@
 ---
 name: gestel-schema
 description: 'Use to add, fix, or optimize schema.org structured data (JSON-LD) across any page type — Organization, WebSite/SearchAction, Article/BlogPosting, Product, SoftwareApplication, FAQPage, HowTo, BreadcrumbList, LocalBusiness, Event — choosing the right type, writing valid markup, combining types with @graph, and how to validate. Triggers: "schema markup", "structured data", "JSON-LD", "rich snippets", "rich results", "schema.org", "FAQ/product/breadcrumb/organization/local business/event schema", "review/star ratings in search", "knowledge panel", "add structured data". Near-miss (do NOT use): single blog post''s @graph from a post file (gestel-blog-schema); broad ranking/technical diagnosis (gestel-seo-audit); page copy (gestel-copywriting); AI-search/GEO (ai-seo family). Works locally from user-provided page content, URLs, and metadata; needs no hidden credentials, paid provider, live account mutation, or missing upstream scripts.'
-metadata:
-  version: 2.0.0
 license: MIT
 ---
 

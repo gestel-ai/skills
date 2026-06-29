@@ -98,6 +98,13 @@ When adding or renaming a skill, update all of these together:
 - Every skill declares `license: MIT` in its `SKILL.md` frontmatter, matching
   the repo `LICENSE` and the `license` field in `.claude-plugin/plugin.json`.
   Keep this all-or-none: either all skills carry the key or none do.
+- The standard frontmatter is exactly `name`, `description`, and `license` on
+  all 121 skills. `allowed-tools` and `metadata` are permitted by the loader but
+  intentionally unused library-wide: `allowed-tools` restricts tool access and
+  the flexible content skills are meant to inherit the session's full tools, and
+  `metadata` (e.g. a `version` field) carried no maintained scheme. Do not add
+  either repo-wide. Add `allowed-tools` only to a specific skill that genuinely
+  needs sandboxing, and note the exception here when you do.
 - Skill `description` text starts with `Use when …` so triggering reads
   consistently. Two intentional exceptions keep their original openers:
   `skills/content/gestel-blog` (an orchestrator description starting

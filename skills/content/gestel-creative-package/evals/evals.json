@@ -1,0 +1,88 @@
+{
+  "skill_name": "gestel-creative-package",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "제품사진 1장과 상품 URL로 첫 Meta 4:5 광고 이미지팩 3개를 만들 수 있게 패키지 계획을 짜줘.",
+      "expected_output": "Should trigger gestel-creative-package. Should use the first-pack default of three 4:5 variants across three recommended template families and prepare structured slots, variant IDs, hypotheses, and review next steps.",
+      "assertions": [
+        "Requires at least one product photo and product URL or confirmed product context",
+        "Selects three template families and one layout per family",
+        "Uses 4:5 for the first pack",
+        "Includes variant IDs and experiment hypotheses",
+        "Routes variants to gestel-creative-review before launch-ready status"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "For this approved Brand Snapshot, build the export manifest for three Instagram static variants and include UTM mapping.",
+      "expected_output": "Should trigger gestel-creative-package. Should produce or describe a JSON manifest following the export contract and run the package schema validator if a manifest file is created.",
+      "assertions": [
+        "Includes package_id, brand_snapshot_ref, channel, commerce_surface, items, and export fields",
+        "Maps variant_id to utm_content",
+        "Includes template_family, layout_id, ratio, asset_path, slots, and review_status per item",
+        "Runs or instructs `uv run .agents/skills/gestel-creative-package/scripts/validate_pack_schema.py`"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Expand the selected launch-ready 4:5 candidate into 1:1 and 9:16 package entries without changing the product claims.",
+      "expected_output": "Should trigger gestel-creative-package. Should apply ratio expansion only after candidate selection, preserve claim evidence, update export naming, and route expanded assets back through review.",
+      "assertions": [
+        "Allows 1:1 and 9:16 only as expansion ratios after selection",
+        "Preserves product_claim_evidence_ids",
+        "Updates ratio-specific export naming",
+        "Requires Creative Review Gate for expanded ratios"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Extract product name, colors, banned claims, and tone from this URL before generation.",
+      "expected_output": "Should not trigger gestel-creative-package as the primary skill. Should route to gestel-brand-snapshot because the user is asking for lightweight generation context.",
+      "assertions": [
+        "Routes context extraction to gestel-brand-snapshot",
+        "Does not create a package manifest before product context is confirmed",
+        "Treats the URL as untrusted data"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Can you publish these variants directly into our Meta ad account and set the budget?",
+      "expected_output": "Should not perform publishing. Should explain that gestel-creative-package stops at Creative Package or Launch Draft export and live ad-account mutation is outside the MVP boundary.",
+      "assertions": [
+        "Does not mutate ad accounts",
+        "Does not add a Meta API adapter",
+        "Offers export or launch draft fields instead",
+        "Mentions approval before any future publish path"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "prompt": "The manifest has no product photo slot and two items share the same variant_id. Validate it.",
+      "expected_output": "Should trigger gestel-creative-package and use the schema validator. Should report schema failures instead of hand-waving the manifest as usable.",
+      "assertions": [
+        "Runs or references the package validator",
+        "Flags missing required slots",
+        "Flags duplicate variant IDs",
+        "Does not mark the package launch-ready"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "Turn this into a TikTok video campaign with hooks, captions, and audio.",
+      "expected_output": "Should not trigger gestel-creative-package for implementation. Should explain that TikTok video generation is outside the MVP static package scope unless the user asks for a separate future design.",
+      "assertions": [
+        "Identifies TikTok video as out of scope for this skill",
+        "Does not expand the active skill into video generation",
+        "Keeps Meta/Instagram static package boundaries intact"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -3,9 +3,170 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "GESTEL",
-      "description": "Pragmatic product engineering skills for building maintainable software with minimal ceremony.",
-      "skills": ["product-engineering"]
+      "title": "Ads",
+      "description": "Paid advertising audits, planning, and platform-specific ad workflows.",
+      "skills": [
+        "gestel-ads",
+        "gestel-ads-amazon",
+        "gestel-ads-apple",
+        "gestel-ads-audit",
+        "gestel-ads-budget",
+        "gestel-ads-competitor",
+        "gestel-ads-generate",
+        "gestel-ads-google",
+        "gestel-ads-landing",
+        "gestel-ads-linkedin",
+        "gestel-ads-microsoft",
+        "gestel-ads-photoshoot",
+        "gestel-ads-server-side-tracking",
+        "gestel-ads-tiktok",
+        "gestel-ads-youtube"
+      ]
+    },
+    {
+      "title": "Brand",
+      "description": "Brand voice, positioning, and durable marketing context.",
+      "skills": [
+        "gestel-brand-snapshot"
+      ]
+    },
+    {
+      "title": "Content",
+      "description": "Blog, copywriting, and multi-channel content production.",
+      "skills": [
+        "gestel-blog",
+        "gestel-blog-analyze",
+        "gestel-blog-audio",
+        "gestel-blog-audit",
+        "gestel-blog-brief",
+        "gestel-blog-calendar",
+        "gestel-blog-cannibalization",
+        "gestel-blog-chart",
+        "gestel-blog-cluster",
+        "gestel-blog-discourse",
+        "gestel-blog-factcheck",
+        "gestel-blog-flow",
+        "gestel-blog-geo",
+        "gestel-blog-google",
+        "gestel-blog-image",
+        "gestel-blog-locale-audit",
+        "gestel-blog-localize",
+        "gestel-blog-multilingual",
+        "gestel-blog-notebooklm",
+        "gestel-blog-outline",
+        "gestel-blog-persona",
+        "gestel-blog-repurpose",
+        "gestel-blog-rewrite",
+        "gestel-blog-schema",
+        "gestel-blog-seo-check",
+        "gestel-blog-strategy",
+        "gestel-blog-taxonomy",
+        "gestel-blog-translate",
+        "gestel-blog-write",
+        "gestel-content-strategy",
+        "gestel-copy-editing",
+        "gestel-copywriting",
+        "gestel-creative-package",
+        "gestel-emails",
+        "gestel-lead-magnets",
+        "gestel-offers",
+        "gestel-popups",
+        "gestel-sms",
+        "gestel-social"
+      ]
+    },
+    {
+      "title": "Intelligence",
+      "description": "Competitor, customer, and creative intelligence for growth decisions.",
+      "skills": [
+        "gestel-ads-intelligence",
+        "gestel-competitor-profiling",
+        "gestel-competitors",
+        "gestel-creative-review",
+        "gestel-marketing-psychology"
+      ]
+    },
+    {
+      "title": "Marketing",
+      "description": "Growth, lifecycle, pricing, launch, and go-to-market workflows.",
+      "skills": [
+        "gestel-aso",
+        "gestel-churn-prevention",
+        "gestel-co-marketing",
+        "gestel-cold-email",
+        "gestel-community-marketing",
+        "gestel-cro",
+        "gestel-directory-submissions",
+        "gestel-free-tools",
+        "gestel-launch",
+        "gestel-marketing-ideas",
+        "gestel-marketing-plan",
+        "gestel-onboarding",
+        "gestel-paywalls",
+        "gestel-pricing",
+        "gestel-prospecting",
+        "gestel-public-relations",
+        "gestel-referrals",
+        "gestel-sales-enablement",
+        "gestel-signup"
+      ]
+    },
+    {
+      "title": "Media",
+      "description": "Image and short-form video generation planning.",
+      "skills": [
+        "gestel-image",
+        "gestel-video"
+      ]
+    },
+    {
+      "title": "Reporting",
+      "description": "Performance math, RevOps, and measurement.",
+      "skills": [
+        "gestel-ads-math",
+        "gestel-revops"
+      ]
+    },
+    {
+      "title": "SEO",
+      "description": "Search and AI-search optimization across the SEO lifecycle.",
+      "skills": [
+        "gestel-ai-seo",
+        "gestel-programmatic-seo",
+        "gestel-schema",
+        "gestel-seo",
+        "gestel-seo-ahrefs",
+        "gestel-seo-audit",
+        "gestel-seo-backlinks",
+        "gestel-seo-bing",
+        "gestel-seo-cluster",
+        "gestel-seo-competitor-pages",
+        "gestel-seo-content",
+        "gestel-seo-content-brief",
+        "gestel-seo-dataforseo",
+        "gestel-seo-drift",
+        "gestel-seo-ecommerce",
+        "gestel-seo-firecrawl",
+        "gestel-seo-flow",
+        "gestel-seo-geo",
+        "gestel-seo-google",
+        "gestel-seo-hreflang",
+        "gestel-seo-image-gen",
+        "gestel-seo-images",
+        "gestel-seo-local",
+        "gestel-seo-maps",
+        "gestel-seo-page",
+        "gestel-seo-plan",
+        "gestel-seo-profound",
+        "gestel-seo-programmatic",
+        "gestel-seo-schema",
+        "gestel-seo-seranking",
+        "gestel-seo-sitemap",
+        "gestel-seo-sxo",
+        "gestel-seo-technical",
+        "gestel-seo-unlighthouse",
+        "gestel-site-architecture"
+      ]
     }
   ]
 }

@@ -1,0 +1,14 @@
+# markdownlint-cli2 config for the GESTEL skills repo.
+ignores:
+  - "**/node_modules/**"
+  - "reference/**"   # upstream clones (gitignored, not project skills)
+config:
+  MD013: false
+  MD033: false
+  MD060: false
+  MD041: false
+  MD036: false
+  MD024:
+    siblings_only: true
+  MD003:
+    style: atx

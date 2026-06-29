@@ -1,43 +1,43 @@
 # GESTEL Skills
 
-Public agent skills for pragmatic product engineering.
+Public agent skills for marketing — a library of 118 self-contained skills
+covering paid ads, content, SEO, brand, growth, and measurement.
 
-This repository follows the Vercel Labs `skills` CLI layout:
-
-```text
-.claude-plugin/
-  plugin.json
-skills/
-  product-engineering/
-    SKILL.md
-skills.sh.json
-```
-
-It supports both conventional skill discovery and plugin manifest discovery.
+This repository follows the Vercel Labs `skills` CLI layout and exposes the
+skills through both conventional skill discovery and plugin manifest discovery.
 
 ## Skills
 
-### product-engineering
+The library is organized into 8 categories:
 
-Guidance for building, reviewing, and refactoring application code with small
-reversible changes, boring technology, simple architecture, semantic HTML, and
-practical tests.
+| Category | Skills | Focus |
+| --- | --- | --- |
+| Ads | 15 | Paid advertising audits, planning, and platform-specific ad workflows. |
+| Brand | 1 | Brand voice, positioning, and durable marketing context. |
+| Content | 39 | Blog, copywriting, and multi-channel content production. |
+| Intelligence | 5 | Competitor, customer, and creative intelligence for growth decisions. |
+| Marketing | 19 | Growth, lifecycle, pricing, launch, and go-to-market workflows. |
+| Media | 2 | Image and short-form video generation planning. |
+| Reporting | 2 | Performance math, RevOps, and measurement. |
+| SEO | 35 | Search and AI-search optimization across the SEO lifecycle. |
 
-Use it when maintainability, delivery speed, and operational risk matter.
+Each skill is self-contained: a procedural `SKILL.md` plus its own
+`references/` support material and `evals/`. Skills do not depend on any
+top-level clone of upstream source material to run.
 
 ## Install
 
-Install or inspect this repository with:
+Browse the full catalog, then install or use individual skills by name:
 
 ```bash
+# List every skill in the library
 npx skills add https://github.com/gestel-ai/skills --list
-npx skills add https://github.com/gestel-ai/skills --skill product-engineering
-```
 
-You can also use the skill without installing it:
+# Install a specific skill (replace with any name from --list)
+npx skills add https://github.com/gestel-ai/skills --skill gestel-ads
 
-```bash
-npx skills use https://github.com/gestel-ai/skills --skill product-engineering
+# Use a skill without installing it
+npx skills use https://github.com/gestel-ai/skills --skill gestel-ads
 ```
 
 ## Local Validation
@@ -46,9 +46,7 @@ Run these checks before publishing changes:
 
 ```bash
 npx skills add . --list
-npx skills use . --skill product-engineering >/tmp/product-engineering.txt
 ```
 
-The first command verifies that the repository is discoverable by the Vercel
-Labs `skills` CLI. The second verifies that the skill can be resolved into an
-agent prompt.
+This verifies that the repository is discoverable by the Vercel Labs `skills`
+CLI and that every skill in the manifest resolves.

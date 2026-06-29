@@ -60,11 +60,17 @@ set it to "none".
 
 
 def skill_dirs(root: Path) -> list[Path]:
-    _ignore = {".git", "node_modules", ".ruff_cache", ".venv", "reference", "references", "__pycache__"}
+    _ignore = {
+        ".git",
+        "node_modules",
+        ".ruff_cache",
+        ".venv",
+        "reference",
+        "references",
+        "__pycache__",
+    }
     return sorted(
-        p.parent
-        for p in root.rglob("SKILL.md")
-        if not _ignore.intersection(p.parts)
+        p.parent for p in root.rglob("SKILL.md") if not _ignore.intersection(p.parts)
     )
 
 

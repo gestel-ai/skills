@@ -7,7 +7,7 @@ This file gives coding agents guidance when working in this repository.
 This is the public GESTEL skill repository at
 `https://github.com/gestel-ai/skills`.
 
-It is a library of 121 self-contained skills — 119 marketing skills plus 2
+It is a library of 124 self-contained skills — 122 marketing skills plus 2
 authoring meta-skills — organized into 9 categories. It follows the Vercel
 Labs `skills` CLI layout and must remain discoverable with:
 
@@ -38,7 +38,7 @@ skills/
       evals/{evals.json,promptfooconfig.yaml}
 ```
 
-Categories and skill counts (121 total):
+Categories and skill counts (124 total):
 
 | Category | Skills | Focus |
 | --- | --- | --- |
@@ -47,7 +47,7 @@ Categories and skill counts (121 total):
 | content | 39 | Blog, copywriting, and multi-channel content production. |
 | intelligence | 5 | Competitor, customer, and creative intelligence for growth decisions. |
 | marketing | 19 | Growth, lifecycle, pricing, launch, and go-to-market workflows. |
-| media | 3 | Image, short-form video, and visual moodboard generation planning. |
+| media | 6 | Image, short-form video, moodboard, and template generation planning. |
 | reporting | 2 | Performance math, RevOps, and measurement. |
 | seo | 35 | Search and AI-search optimization across the SEO lifecycle. |
 | meta | 2 | Agent skill and goal authoring meta-skills (`goalify`, `skillify`). |
@@ -99,7 +99,7 @@ When adding or renaming a skill, update all of these together:
   the repo `LICENSE` and the `license` field in `.claude-plugin/plugin.json`.
   Keep this all-or-none: either all skills carry the key or none do.
 - The standard frontmatter is exactly `name`, `description`, and `license` on
-  all 121 skills. `allowed-tools` and `metadata` are permitted by the loader but
+  all 124 skills. `allowed-tools` and `metadata` are permitted by the loader but
   intentionally unused library-wide: `allowed-tools` restricts tool access and
   the flexible content skills are meant to inherit the session's full tools, and
   `metadata` (e.g. a `version` field) carried no maintained scheme. Do not add

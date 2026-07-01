@@ -1,0 +1,72 @@
+{
+  "name": "gestel-skills",
+  "owner": {
+    "name": "GESTEL"
+  },
+  "description": "GESTEL marketing skill library — 121 self-contained skills across 9 categories, installable by category.",
+  "plugins": [
+    {
+      "name": "gestel-ads",
+      "source": "./skills/ads",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Paid advertising audits, planning, and platform-specific ad workflows (15 skills)."
+    },
+    {
+      "name": "gestel-brand",
+      "source": "./skills/brand",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Brand voice, positioning, and durable marketing context (1 skill)."
+    },
+    {
+      "name": "gestel-content",
+      "source": "./skills/content",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Blog, copywriting, and multi-channel content production (39 skills)."
+    },
+    {
+      "name": "gestel-intelligence",
+      "source": "./skills/intelligence",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Competitor, customer, and creative intelligence for growth decisions (5 skills)."
+    },
+    {
+      "name": "gestel-marketing",
+      "source": "./skills/marketing",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Growth, lifecycle, pricing, launch, and go-to-market workflows (19 skills)."
+    },
+    {
+      "name": "gestel-media",
+      "source": "./skills/media",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Image, short-form video, moodboard, and template generation planning (6 skills)."
+    },
+    {
+      "name": "gestel-reporting",
+      "source": "./skills/reporting",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Performance math, RevOps, and measurement (2 skills)."
+    },
+    {
+      "name": "gestel-seo",
+      "source": "./skills/seo",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Search and AI-search optimization across the SEO lifecycle (35 skills)."
+    },
+    {
+      "name": "gestel-meta",
+      "source": "./skills/meta",
+      "skills": ["./"],
+      "strict": false,
+      "description": "Agent skill and goal authoring meta-skills: goalify and skillify (2 skills)."
+    }
+  ]
+}

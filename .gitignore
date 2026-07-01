@@ -8,3 +8,4 @@ node_modules/
 # Upstream skill clones used only as local distillation source (not runtime deps)
 reference/
 renders/
+docs/superpowers/

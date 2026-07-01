@@ -111,7 +111,7 @@
     {
       "description": "gestel-create-template eval 2",
       "vars": {
-        "prompt": "Gestelify this image \u2014 rebrand it and give me a template.",
+        "prompt": "Can you gestelify this image \u2014 rebrand it and give me a template.",
         "expected_output": "Should trigger gestel-create-template, defaulting the brand slot to GESTEL, lightly varying the tagline/copy so it doesn't read as a copy-paste, and producing one rebranded example render alongside the reusable template.",
         "assertions_text": "- Triggers gestel-create-template\n- Defaults the {BRAND} slot fill to GESTEL\n- Lightly varies the tagline and secondary copy rather than a mechanical find-and-replace\n- Produces exactly one example render, not a batch\n- Applies the cost-confirmation gate before the paid render",
         "files": "[]"

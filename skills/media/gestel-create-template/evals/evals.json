@@ -16,7 +16,7 @@
     },
     {
       "id": 2,
-      "prompt": "Gestelify this image — rebrand it and give me a template.",
+      "prompt": "Can you gestelify this image — rebrand it and give me a template.",
       "expected_output": "Should trigger gestel-create-template, defaulting the brand slot to GESTEL, lightly varying the tagline/copy so it doesn't read as a copy-paste, and producing one rebranded example render alongside the reusable template.",
       "assertions": [
         "Triggers gestel-create-template",

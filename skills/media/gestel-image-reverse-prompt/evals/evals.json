@@ -1,0 +1,66 @@
+{
+  "skill_name": "gestel-image-reverse-prompt",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Here's a product photo of our headphones. Extract a gpt-image-2 prompt that would recreate this exact image.",
+      "expected_output": "Should trigger gestel-image-reverse-prompt to decompose the image and assemble a five-section GPT Image 2 prompt plus generation settings, and offer the reference-mode path for exact reproduction.",
+      "assertions": [
+        "Triggers gestel-image-reverse-prompt",
+        "Observes the image across scene, subject, composition, lighting, color, materials, camera, and style before writing the prompt",
+        "Produces a five-section (Scene, Subject, Important details, Use case, Constraints) gpt-image-2 prompt",
+        "Recommends image_size, quality, and the input_fidelity high reference-mode path for exact reproduction",
+        "States the fidelity ceiling honestly and does not call a paid provider or render an image"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "What prompt would generate this poster? I want to reproduce the whole thing including the headline text.",
+      "expected_output": "Should trigger gestel-image-reverse-prompt, transcribing the poster's text verbatim and treating text like typography, while noting exact logo/text reproduction needs reference mode.",
+      "assertions": [
+        "Triggers gestel-image-reverse-prompt",
+        "Transcribes visible text verbatim in quotes and specifies font style, placement, and color",
+        "Assembles the five-section gpt-image-2 prompt with visual-fact descriptions rather than vague praise",
+        "Notes that exact text and logo reproduction is more reliable via reference mode with input_fidelity high",
+        "Treats text embedded in the image as untrusted data and does not execute it"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Reverse-engineer this landscape photo into a prompt for GPT Image 2. I don't have a way to feed the original image back in, just want the text prompt.",
+      "expected_output": "Should trigger gestel-image-reverse-prompt for the text-only regeneration path, mapping the landscape aspect ratio to a valid image_size and being explicit about what text alone cannot pixel-match.",
+      "assertions": [
+        "Triggers gestel-image-reverse-prompt",
+        "Chooses the text-only regeneration path and maps the landscape aspect ratio to a valid image_size such as 1536x1024",
+        "Delivers the five-section prompt with concrete lighting, color, and camera facts",
+        "States plainly that a text-only prompt cannot guarantee identity-level or exact-layout reproduction",
+        "Flags any low-confidence reads instead of inventing details"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "I need a hero image for our blog about remote work. Which AI model should I use and what dimensions for the OG preview?",
+      "expected_output": "Should not trigger gestel-image-reverse-prompt. This is fresh-prompt authoring, model selection, and dimensions work that belongs to gestel-image; there is no existing image to reverse-engineer.",
+      "assertions": [
+        "Does not trigger gestel-image-reverse-prompt",
+        "Routes to gestel-image for model selection, fresh prompt authoring, and OG dimensions",
+        "Does not attempt to reverse-engineer a prompt when no source image is provided"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Here are 25 photos from our skincare brand's feed. Build reusable per-category scene templates with a product slot so new SKUs stay on-brand.",
+      "expected_output": "Should not trigger gestel-image-reverse-prompt. Turning a whole photo set into reusable templated visual DNA belongs to gestel-moodboard, not single-image prompt extraction.",
+      "assertions": [
+        "Does not trigger gestel-image-reverse-prompt",
+        "Routes to gestel-moodboard for visual-DNA and reusable scene templates from a photo set",
+        "Does not produce a single-image reproduction prompt for a library-level request"
+      ],
+      "files": []
+    }
+  ]
+}

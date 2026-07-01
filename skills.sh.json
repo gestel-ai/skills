@@ -115,7 +115,10 @@
       "title": "Media",
       "description": "Image and short-form video generation planning.",
       "skills": [
+        "gestel-create-template",
         "gestel-image",
+        "gestel-image-render",
+        "gestel-image-reverse-prompt",
         "gestel-moodboard",
         "gestel-video"
       ]

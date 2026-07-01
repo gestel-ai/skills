@@ -1,0 +1,64 @@
+{
+  "skill_name": "gestel-image-render",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Take this gpt-image-2 prompt I have in prompt.txt and actually render the image at 1024x1024, high quality. My FAL_KEY is in ~/dev/gestel-app/.env.",
+      "expected_output": "Should trigger gestel-image-render to run the bundled script against the fal gpt-image-2 endpoint, after a dry-run preflight and a cost confirmation, saving the file and reporting the path.",
+      "assertions": [
+        "Triggers gestel-image-render",
+        "Runs a --dry-run preflight and confirms FAL_KEY is available before any paid call",
+        "Confirms scope and cost with the user before rendering",
+        "Invokes scripts/generate.py via uv with the prompt, image_size, and quality",
+        "Reports the saved image path and never prints the FAL_KEY"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I extracted a reproduction prompt from a product shot with the reverse-prompt skill. Now generate the actual image with gpt-image-2 on fal.",
+      "expected_output": "Should trigger gestel-image-render as the render backend consuming a prompt from gestel-image-reverse-prompt, reusing its recommended settings and gating on cost.",
+      "assertions": [
+        "Triggers gestel-image-render",
+        "Reuses the recommended image_size and quality from the reverse-prompt output",
+        "Applies the cost-confirmation gate before calling the paid provider",
+        "Runs the fal generate endpoint through the bundled script and returns the saved path"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Reproduce this exact photo faithfully — use gpt-image-2 edit mode with the original as a reference and keep the layout locked.",
+      "expected_output": "Should trigger gestel-image-render in edit mode, uploading the reference image and setting input_fidelity high, after the confirmation gate.",
+      "assertions": [
+        "Triggers gestel-image-render",
+        "Uses edit mode with --ref-image and input_fidelity high for faithful reproduction",
+        "Uploads the reference image to fal rather than assuming a URL",
+        "Still confirms cost before the paid call and reports the saved path"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Write me a strong gpt-image-2 prompt for a minimalist SaaS dashboard hero image and tell me what dimensions to use.",
+      "expected_output": "Should not trigger gestel-image-render. This is prompt authoring and dimension planning with no rendering requested, which belongs to gestel-image.",
+      "assertions": [
+        "Does not trigger gestel-image-render",
+        "Routes to gestel-image for prompt writing and dimension planning",
+        "Does not call a paid provider or render pixels when only a prompt is requested"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "Here's a product photo — what prompt would recreate it in GPT Image 2?",
+      "expected_output": "Should not trigger gestel-image-render. Extracting a reproduction prompt from an existing image is gestel-image-reverse-prompt; no rendering is requested.",
+      "assertions": [
+        "Does not trigger gestel-image-render",
+        "Routes to gestel-image-reverse-prompt for extracting a prompt from an existing image",
+        "Does not spend money rendering when the user only wants the prompt"
+      ],
+      "files": []
+    }
+  ]
+}

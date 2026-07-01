@@ -1,0 +1,67 @@
+{
+  "skill_name": "gestel-create-template",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Turn this product shot into a reusable GESTEL template I can swap other products into.",
+      "expected_output": "Should trigger gestel-create-template to extract the blueprint from the single source image, freeze the environment while opening {PRODUCT} and {BRAND} slots, write the template to <scene>.txt, and render one <scene>.webp example after the cost-and-confirmation gate.",
+      "assertions": [
+        "Triggers gestel-create-template",
+        "Extracts the five-section blueprint via the gestel-image-reverse-prompt method before templating",
+        "Freezes the environment (background, composition, camera, lighting, palette, grading, placement) and opens {PRODUCT} and {BRAND} slots",
+        "Writes the template to <scene>.txt",
+        "Runs the dry-run preflight and gets explicit cost confirmation before rendering the single <scene>.webp example"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Gestelify this image — rebrand it and give me a template.",
+      "expected_output": "Should trigger gestel-create-template, defaulting the brand slot to GESTEL, lightly varying the tagline/copy so it doesn't read as a copy-paste, and producing one rebranded example render alongside the reusable template.",
+      "assertions": [
+        "Triggers gestel-create-template",
+        "Defaults the {BRAND} slot fill to GESTEL",
+        "Lightly varies the tagline and secondary copy rather than a mechanical find-and-replace",
+        "Produces exactly one example render, not a batch",
+        "Applies the cost-confirmation gate before the paid render"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Make a swappable-product template from this bottle photo, brand it 'Aurora'.",
+      "expected_output": "Should trigger gestel-create-template, using the explicitly supplied brand 'Aurora' instead of the GESTEL default while still gating cost before the render.",
+      "assertions": [
+        "Triggers gestel-create-template",
+        "Uses the user-supplied brand 'Aurora' to fill the {BRAND} slot instead of the GESTEL default",
+        "Still freezes the environment and slotifies {PRODUCT} as usual",
+        "Still runs the dry-run preflight and gets explicit cost confirmation before the paid render"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Here are 30 photos from our feed — build our brand visual DNA and category templates.",
+      "expected_output": "Should not trigger gestel-create-template. A set of many reference images used to derive brand-wide visual DNA and many category templates is gestel-moodboard, which is reasoning-only and never renders.",
+      "assertions": [
+        "Does not trigger gestel-create-template",
+        "Routes to gestel-moodboard for brand-wide visual DNA and category templates from a reference set",
+        "Does not attempt to run the single-image freeze/slotify/vary pipeline on a 30-image set",
+        "Does not call a paid render provider"
+      ],
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "What prompt would recreate this image in GPT Image 2?",
+      "expected_output": "Should not trigger gestel-create-template. Extracting a reproduction prompt only, with no template file and no render, is gestel-image-reverse-prompt.",
+      "assertions": [
+        "Does not trigger gestel-create-template",
+        "Routes to gestel-image-reverse-prompt for the reproduction prompt only",
+        "Does not write a <scene>.txt template or slotify {PRODUCT}/{BRAND}",
+        "Does not render an example image or spend money"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -32,7 +32,7 @@ call.
   its own dependencies inline, so `uv run` installs them on first use).
 - **`FAL_KEY`** credential. The script reads it from the environment or from a
   `.env` file you point at with `--env-file`. Never hardcode or print the key.
-  Example: `--env-file ~/dev/gestel-app/.env`.
+  Example: `--env-file path/to/.env`.
 
 If `FAL_KEY` is missing, stop and tell the user how to provide it rather than
 guessing — do not attempt the call.
@@ -80,7 +80,7 @@ uv run skills/media/gestel-image-render/scripts/generate.py \
   --num-images 1 \
   --output-dir renders \
   --name blueberry-cream \
-  --env-file ~/dev/gestel-app/.env
+  --env-file path/to/.env
 ```
 
 Preflight the same command by appending `--dry-run` (no cost, no key required to
@@ -96,7 +96,7 @@ uv run skills/media/gestel-image-render/scripts/generate.py \
   --ref-image original.jpg \
   --input-fidelity high \
   --output-dir renders \
-  --env-file ~/dev/gestel-app/.env
+  --env-file path/to/.env
 ```
 
 Full parameter and endpoint details are in

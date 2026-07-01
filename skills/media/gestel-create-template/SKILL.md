@@ -97,7 +97,7 @@ uv run skills/media/gestel-image-render/scripts/generate.py \
   --output-format webp \
   --output-dir renders \
   --name <scene> \
-  --env-file ~/dev/gestel-app/.env
+  --env-file path/to/.env
 ```
 
 Obey the [cost and confirmation gate](#cost-and-confirmation-gate) before the
